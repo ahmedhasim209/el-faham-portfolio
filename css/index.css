@@ -9,3 +9,94 @@
 * {
   font-family: "Inter", sans-serif;
 }
+/* start main */
+/* start landing */
+main .landing {
+  background-image: url(../images/landing-background.webp);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+/* start nav */
+.landing nav {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  gap: 30%;
+  text-transform: uppercase;
+}
+.landing nav a {
+  width: 20%;
+}
+.landing nav a img {
+  width: 160px;
+  height: 60px;
+}
+.landing nav ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.landing nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.landing nav ul li a:hover {
+  color: #acff00;
+}
+/* start nav */
+/* start landing content */
+.landing-content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing-content .text h1 {
+  font-weight: 200;
+  color: white;
+}
+.landing-content .text h1 span {
+  color: #acff00;
+  font-weight: 600;
+}
+.landing-content .text button {
+  width: 165px;
+  height: 53px;
+  border-radius: 16px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 3px solid white;
+}
+.landing-content .text button:hover {
+  background-color: transparent;
+}
+.landing-content .text button a {
+  text-decoration: none;
+  color: #108824;
+  font-weight: 600;
+  padding: 16px;
+}
+.landing-content .text button:hover > a {
+  color: white;
+}
+.landing-content img {
+  width: 480px;
+  margin-top: 66px;
+  margin-right: 50px;
+}
+/* end landing content */
+/* end landing */
+/* end main */

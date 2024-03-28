@@ -168,4 +168,116 @@ main .landing {
   color: var(--main-color);
 }
 /* end brief */
+/* start Goal */
+.goal {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.goal .goal-text {
+  text-align: center;
+}
+.goal .goal-text h2 {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 67.2px;
+  margin: 0;
+}
+.goal .goal-text h2 span {
+  font-weight: 400;
+}
+.goal .goal-text p {
+  font-weight: 400;
+  font-size: 16.63px;
+  line-height: 28.5px;
+  color: #454545;
+}
+.goal #carts-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 90%;
+  margin: 50px auto;
+}
+.goal #carts-holder .card {
+  opacity: 0;
+  width: 370px;
+  height: 230px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+  cursor: default;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-300%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+.goal #carts-holder .card:hover {
+  color: white;
+  background-color: #108824;
+}
+.goal #carts-holder .card .card-img-black,
+.goal #carts-holder .card .card-img-white {
+  width: 65px;
+  height: 65px;
+  transition: 1s ease;
+}
+.goal #carts-holder .card .card-img-white {
+  display: none;
+}
+.goal #carts-holder .card:hover > .card-img-white {
+  display: block;
+}
+.goal #carts-holder .card:hover > .card-img-black {
+  display: none;
+}
+.goal #carts-holder .card .card-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.8px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+.goal #carts-holder .card .card-dis {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  margin-top: 5px;
+}
+.goal .button-container {
+  display: flex;
+}
+.goal .button-container button {
+  margin: 0 auto;
+  background-color: rgb(16 136 36 / 10%);
+  width: 165px;
+  height: 53px;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.goal .button-container button:hover {
+  background-color: var(--main-color);
+}
+.goal .button-container button a {
+  padding: 16px 27px;
+  color: var(--main-color);
+  text-decoration: none;
+}
+.goal .button-container button:hover > a {
+  color: white;
+}
+/* end Goal */
 /* end main */

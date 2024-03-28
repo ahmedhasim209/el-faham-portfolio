@@ -119,17 +119,21 @@ main .landing {
   justify-content: space-between;
   align-items: center;
   gap: 10%;
+  position: relative;
+}
+.brief .contanier::before {
+  content: "";
+  width: 240px;
+  height: 190px;
+  background-image: url("../images/shape-about-home.webp");
+  top: -95px;
+  left: -95px;
+  position: absolute;
+  z-index: 100;
+  background-size: auto;
 }
 .brief .contanier img {
   width: 500px;
-  position: relative;
-}
-.brief .contanier img::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-image: url(../images/shape-about-home.webp);
 }
 .brief .brief-content {
   width: 51%;

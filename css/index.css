@@ -1,3 +1,9 @@
+:root {
+  --section-padding: 100px;
+  --main-color: #108824;
+  --secondary-color: #20b43f;
+  --hover-color: #acff00;
+}
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf")
@@ -9,6 +15,12 @@
 * {
   font-family: "Inter", sans-serif;
 }
+/* start components */
+.contanier {
+  width: 90%;
+  margin: 0 auto;
+}
+/* end components */
 /* start main */
 /* start landing */
 main .landing {
@@ -18,10 +30,8 @@ main .landing {
   background-size: cover;
 }
 /* start nav */
-.landing nav {
+.landing .contanier nav {
   display: flex;
-  width: 90%;
-  margin: 0 auto;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -30,14 +40,14 @@ main .landing {
   gap: 30%;
   text-transform: uppercase;
 }
-.landing nav a {
+.landing .contanier nav a {
   width: 20%;
 }
-.landing nav a img {
+.landing .contanier nav a img {
   width: 160px;
   height: 60px;
 }
-.landing nav ul {
+.landing .contanier nav ul {
   display: flex;
   list-style: none;
   width: 50%;
@@ -45,18 +55,16 @@ main .landing {
   flex-wrap: nowrap;
   flex-direction: row;
 }
-.landing nav ul li a {
+.landing .contanier nav ul li a {
   text-decoration: none;
   color: white;
 }
-.landing nav ul li a:hover {
+.landing .contanier nav ul li a:hover {
   color: #acff00;
 }
 /* start nav */
 /* start landing content */
 .landing-content {
-  width: 90%;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -99,4 +107,61 @@ main .landing {
 }
 /* end landing content */
 /* end landing */
+/* start brief */
+.brief {
+  padding-top: calc(var(--section-padding) * 1.5);
+  padding-bottom: var(--section-padding);
+}
+.brief .contanier {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+.brief .contanier img {
+  width: 500px;
+  position: relative;
+}
+.brief .contanier img::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/shape-about-home.webp);
+}
+.brief .brief-content {
+  width: 51%;
+  margin-bottom: 0;
+}
+.brief .brief-content p {
+  font-size: 40px;
+  width: 70%;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.brief .brief-content p span {
+  color: #108824;
+  font-weight: 600;
+}
+.brief .brief-content button {
+  border: 3px solid var(--main-color);
+  background-color: var(--main-color);
+  padding: 17px 10px;
+  border-radius: 16px;
+  transition: 0.3s;
+}
+.brief .brief-content button a {
+  padding: 17px 10px;
+  text-decoration: none;
+  color: white;
+}
+.brief .brief-content button:hover {
+  background-color: transparent;
+}
+.brief .brief-content button:hover > a {
+  color: var(--main-color);
+}
+/* end brief */
 /* end main */

@@ -272,7 +272,7 @@ main .landing {
   background-color: var(--main-color);
 }
 .goal .button-container button a {
-  padding: 16px 27px;
+  padding: 16px 26px;
   color: var(--main-color);
   text-decoration: none;
 }

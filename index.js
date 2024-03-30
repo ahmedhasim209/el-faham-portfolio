@@ -29,13 +29,13 @@ const goals = [
   },
 ];
 
-const cardsContiner = document.getElementById("carts-holder");
+const cardsContainer = document.getElementById("carts-holder");
 
 const viewGoals = () => {
   for (let i = 0; i < goals.length; i++) {
     const card = document.createElement("div");
     card.classList.add("card");
-    cardsContiner.appendChild(card);
+    cardsContainer.appendChild(card);
     const imageBlack = document.createElement("img");
     imageBlack.classList.add("card-img-black");
     const imageWhite = document.createElement("img");
@@ -57,6 +57,44 @@ const viewGoals = () => {
   }
 };
 viewGoals();
+
+const numbers = [
+  {
+    number: "9000+",
+    title: "Tonne Annual Export",
+  },
+  {
+    number: "55000+",
+    title: "Tonne Annual Import",
+  },
+  {
+    number: "1000+",
+    title: "Daily Production Rate",
+  },
+  {
+    number: "15+",
+    title: "Production Lines",
+  },
+];
+
+const numbersContainer = document.querySelector(".numbers-holder");
+
+const viewNumbers = () => {
+  for (let i = 0; i < numbers.length; i++) {
+    const numberCard = document.createElement("div");
+    numberCard.classList.add("num-card");
+    numbersContainer.appendChild(numberCard);
+    const number = document.createElement("span");
+    number.classList.add("nums");
+    const title = document.createElement("h3");
+    title.classList.add("title");
+    numberCard.appendChild(number);
+    numberCard.appendChild(title);
+    number.innerHTML = numbers[i].number;
+    title.innerHTML = numbers[i].title;
+  }
+};
+viewNumbers();
 
 // select goal section
 const goal = document.querySelector(".goal");

@@ -60,20 +60,24 @@ viewGoals();
 
 const numbers = [
   {
-    number: "9000+",
+    number: 0,
     title: "Tonne Annual Export",
+    value: 9000,
   },
   {
-    number: "55000+",
+    number: 0,
     title: "Tonne Annual Import",
+    value: 55000,
   },
   {
-    number: "1000+",
+    number: 0,
     title: "Daily Production Rate",
+    value: 1000,
   },
   {
-    number: "15+",
+    number: 0,
     title: "Production Lines",
+    value: 15,
   },
 ];
 
@@ -91,28 +95,67 @@ const viewNumbers = () => {
     numberCard.appendChild(number);
     numberCard.appendChild(title);
     number.innerHTML = numbers[i].number;
+    number.setAttribute("data-goal", numbers[i].value);
     title.innerHTML = numbers[i].title;
   }
 };
 viewNumbers();
 
+// select numbers section
+const numberSection = document.querySelector(".numbers");
+const allNumbers = document.querySelectorAll(".nums");
+
 // select goal section
 const goal = document.querySelector(".goal");
 
+let started = false;
 window.onscroll = () => {
+  let pageHeight = window.innerHeight;
+
   //goal offSet top
   let goalOffsetTop = goal.offsetTop; // distance from goal to page = 1885
+
+  //numbers offSet top
+  let numberSectionOffsetTop = numberSection.offsetTop;
 
   // window scroll top
   let windowScrollTop = this.pageYOffset;
 
-  if (windowScrollTop > goalOffsetTop) {
-    //   select cards
-    let allCard = document.querySelectorAll(".goal #carts-holder .card");
+  if (
+    document.body.scrollTop > goalOffsetTop - pageHeight ||
+    document.documentElement.scrollTop > goalOffsetTop - pageHeight
+  ) {
+    if (!started) {
+      //   select cards
+      let allCard = document.querySelectorAll(".goal #carts-holder .card");
+      allCard.forEach((card) => {
+        card.style.opacity = "100%";
+        card.style.animation = "slideIn 2s";
+      });
+    }
+  }
 
-    allCard.forEach((card) => {
-      card.style.opacity = "100%";
-      card.style.animation = "slideIn 2s";
-    });
+  if (windowScrollTop > numberSectionOffsetTop) {
+    if (!started) {
+      allNumbers.forEach((el) => incrementNumber(el));
+      started = true;
+    }
   }
 };
+
+function incrementNumber(el) {
+  let currentNumber = 0;
+  const goal = parseInt(el.getAttribute("data-goal"));
+  const startCount = setInterval(() => {
+    const incrementStep = Math.ceil((goal - currentNumber) / 10);
+    if (currentNumber < goal) {
+      currentNumber += incrementStep;
+      if (currentNumber > goal) {
+        currentNumber = goal;
+      }
+      el.innerText = `${currentNumber}+`;
+    } else {
+      clearInterval(startCount);
+    }
+  }, 50);
+}

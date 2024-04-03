@@ -159,3 +159,95 @@ function incrementNumber(el) {
     }
   }, 50);
 }
+let starIcon = "\u2605";
+
+const products = [
+  {
+    image: "images/White kidney beans.webp",
+    title: "White kidney beans",
+    rate: "starIcon",
+    size: "Bag/25k",
+    altImg: "White-kidney-beans",
+  },
+  {
+    image: "images/Whole broad beans.webp",
+    title: "Whole broad beans",
+    rate: "starIcon",
+    size: "Bag/25k",
+    altImg: "Whole-broad-beans",
+  },
+  {
+    image: "images/lupins.webp",
+    title: "lupins",
+    rate: "starIcon",
+    size: "Bag/25k",
+    altImg: "lupins",
+  },
+  {
+    image: "images/Split red lentils.webp",
+    title: "Split red lentils",
+    rate: "starIcon",
+    size: "Bag/25k",
+    altImg: "Split-red-lentils",
+  },
+  {
+    image: "images/Cumin seeds.webp",
+    title: "Cumin seeds",
+    rate: "starIcon",
+    size: "Bag/25k",
+    altImg: "Cumin-seeds",
+  },
+  {
+    image: "images/Carawy seeds.webp",
+    title: "Carawy seeds",
+    rate: "starIcon",
+    size: "Bag/25k",
+    altImg: "Carawy-seeds",
+  },
+  {
+    image: "images/Black pepper.webp",
+    title: "Black pepper",
+    rate: "starIcon",
+    size: "Bag/25k",
+    altImg: "Black-pepper",
+  },
+  {
+    image: "images//Peanuts.webp",
+    title: "Peanuts",
+    rate: "starIcon",
+    size: "Bag/25k",
+    altImg: "Peanuts",
+  },
+];
+
+const productsHolder = document.getElementById("products-holder");
+
+const viewProducts = () => {
+  for (let i = 0; i < products.length; i++) {
+    console.log(products[i].rate);
+    const product = document.createElement("div");
+    product.classList.add("product-card");
+    productsHolder.appendChild(product);
+    const prodImage = document.createElement("img");
+    prodImage.classList.add("product-img");
+    const prodTitle = document.createElement("p");
+    prodTitle.classList.add("product-title");
+    const prodSize = document.createElement("p");
+    prodSize.classList.add("product-size");
+
+    product.appendChild(prodImage);
+    product.appendChild(prodTitle);
+    product.appendChild(prodSize);
+    prodImage.src = products[i].image;
+    prodImage.alt = products[i].altImg;
+    prodTitle.innerHTML = products[i].title;
+    for (let j = 0; j < 5; j++) {
+      const prodRate = document.createElement("i");
+      prodRate.classList.add("fa-solid");
+      prodRate.classList.add("fa-star");
+      product.appendChild(prodRate);
+    }
+    prodSize.innerHTML = products[i].size;
+  }
+};
+viewProducts();

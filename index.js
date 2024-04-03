@@ -61,23 +61,23 @@ viewGoals();
 const numbers = [
   {
     number: 0,
-    title: "Tonne Annual Export",
-    value: 9000,
+    title: "production lines",
+    value: 7,
   },
   {
     number: 0,
-    title: "Tonne Annual Import",
-    value: 55000,
+    title: "Tones daily production",
+    value: 500,
   },
   {
     number: 0,
-    title: "Daily Production Rate",
-    value: 1000,
-  },
-  {
-    number: 0,
-    title: "Production Lines",
+    title: "Thousand tons of storage space",
     value: 15,
+  },
+  {
+    number: 0,
+    title: "Happy customers",
+    value: 1000,
   },
 ];
 

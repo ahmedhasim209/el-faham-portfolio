@@ -405,3 +405,63 @@ main .landing {
   color: white;
 }
 /* end products home */
+/* start proccess */
+.proccess {
+  padding-bottom: var(--section-padding);
+}
+.proccess .contanier {
+  padding-top: 50px;
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+.proccess .contanier .box {
+  position: relative;
+}
+.proccess .contanier .box img {
+  width: 270px;
+}
+.proccess .contanier .harvesting::before,
+.proccess .contanier .processing::before {
+  content: url(../images/Arrow-down.webp);
+  position: absolute;
+  top: 25px;
+  right: -45%;
+}
+.proccess .contanier .storage::before {
+  content: url(../images/Arrow-up.webp);
+  position: absolute;
+  bottom: -50px;
+  right: -50%;
+}
+.proccess .contanier .packaging::before {
+  content: url(../images/Arrow-down.webp);
+  position: absolute;
+  top: -40px;
+  right: -38%;
+}
+.proccess .contanier .quality::before {
+  content: url(../images/Arrow-up.webp);
+  position: absolute;
+  bottom: 21px;
+  right: -50%;
+}
+.proccess .contanier .final::before {
+  content: url(../images/Arrow-down.webp);
+  position: absolute;
+  top: -40px;
+  right: -37%;
+}
+.proccess .contanier .box p {
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 5px;
+}
+/* end proccess */

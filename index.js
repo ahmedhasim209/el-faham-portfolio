@@ -137,27 +137,31 @@ window.onscroll = () => {
 
   if (windowScrollTop > numberSectionOffsetTop) {
     if (!started) {
-      allNumbers.forEach((el) => incrementNumber(el));
+      incrementNumber(allNumbers);
       started = true;
     }
   }
 };
 
 function incrementNumber(el) {
-  let currentNumber = 0;
-  const goal = parseInt(el.getAttribute("data-goal"));
-  const startCount = setInterval(() => {
-    const incrementStep = Math.ceil((goal - currentNumber) / 10);
-    if (currentNumber < goal) {
-      currentNumber += incrementStep;
-      if (currentNumber > goal) {
-        currentNumber = goal;
+  const incrementIntervals = [];
+  el.forEach((e) => {
+    let currentNumber = 0;
+    const goal = parseInt(e.getAttribute("data-goal"));
+    const startCount = setInterval(() => {
+      const incrementStep = Math.ceil((goal - currentNumber) / 10);
+      if (currentNumber < goal) {
+        currentNumber += incrementStep;
+        if (currentNumber > goal) {
+          currentNumber = goal;
+        }
+        e.innerText = `${currentNumber}+`;
+      } else {
+        clearInterval(startCount);
       }
-      el.innerText = `${currentNumber}+`;
-    } else {
-      clearInterval(startCount);
-    }
-  }, 50);
+    }, 50);
+    incrementIntervals.push(startCount);
+  });
 }
 let starIcon = "\u2605";
 
@@ -228,16 +232,17 @@ const viewProducts = () => {
     const product = document.createElement("div");
     product.classList.add("product-card");
     productsHolder.appendChild(product);
+    const prodImageHolder = document.createElement("div");
+    prodImageHolder.classList.add("image-holder");
     const prodImage = document.createElement("img");
     prodImage.classList.add("product-img");
     const prodTitle = document.createElement("p");
     prodTitle.classList.add("product-title");
     const prodSize = document.createElement("p");
     prodSize.classList.add("product-size");
-
-    product.appendChild(prodImage);
+    product.appendChild(prodImageHolder);
+    prodImageHolder.appendChild(prodImage);
     product.appendChild(prodTitle);
-    product.appendChild(prodSize);
     prodImage.src = products[i].image;
     prodImage.alt = products[i].altImg;
     prodTitle.innerHTML = products[i].title;
@@ -246,6 +251,7 @@ const viewProducts = () => {
       prodRate.classList.add("fa-solid");
       prodRate.classList.add("fa-star");
       product.appendChild(prodRate);
+      product.appendChild(prodSize);
     }
     prodSize.innerHTML = products[i].size;
   }

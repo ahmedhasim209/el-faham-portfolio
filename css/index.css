@@ -465,3 +465,59 @@ main .landing {
   padding-top: 5px;
 }
 /* end proccess */
+/* start news letter */
+.letter {
+  /* background-image: url(../images/numbers-background.webp); */
+  background-size: cover;
+  text-align: center;
+}
+.letter .heading {
+  padding-top: 200px;
+}
+.letter .heading h2 {
+  font-weight: 600;
+  font-size: 50px;
+  margin: 0;
+}
+.letter .heading p {
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  font-size: 23px;
+}
+.letter .input-holder {
+  padding-bottom: 200px;
+}
+.letter .input-holder input {
+  border: none;
+  padding: 15px 20px;
+  width: 400px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: rgb(16 136 36 / 10%);
+}
+.letter .input-holder input:focus {
+  outline-color: var(--main-color);
+}
+.letter .input-holder button {
+  border: none;
+  background-color: var(--main-color);
+  height: 55px;
+  border-radius: 25px;
+  width: 175px;
+  margin-left: 15px;
+  border: 3px solid var(--main-color);
+  transition: 0.3s ease-in;
+}
+.letter .input-holder button:hover {
+  background-color: transparent;
+}
+.letter .input-holder button a {
+  text-decoration: none;
+  color: white;
+  padding: 18px 16px;
+}
+.letter .input-holder button:hover > a {
+  color: var(--main-color);
+}
+/* end news letter */

@@ -257,3 +257,7 @@ const viewProducts = () => {
   }
 };
 viewProducts();
+
+const currentYear = new Date().getFullYear();
+const spanYear = document.getElementById("year");
+spanYear.innerHTML = currentYear;

@@ -523,12 +523,25 @@ main .landing {
 /* end news letter */
 /* start footer */
 footer {
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2),
-    -2px -2px 4px rgba(255, 255, 255, 0.4) inset;
+  position: relative;
   color: #fdfdfda1;
   padding-top: 50px;
   background-color: var(--main-color);
   padding-bottom: 25px;
+}
+footer .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+footer .right {
+  position: absolute;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  opacity: 70%;
 }
 footer .contanier {
   display: flex;

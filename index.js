@@ -1,3 +1,4 @@
+// start home page
 const goals = [
   {
     imageBlack: "images/Manufacturer-black.webp",
@@ -261,3 +262,5 @@ viewProducts();
 const currentYear = new Date().getFullYear();
 const spanYear = document.getElementById("year");
 spanYear.innerHTML = currentYear;
+// end home page
+// ----------------------------------------------

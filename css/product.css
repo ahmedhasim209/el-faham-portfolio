@@ -1,0 +1,95 @@
+:root {
+  --section-padding: 100px;
+  --main-color: #108824;
+  --secondary-color: #20b43f;
+  --hover-color: #acff00;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype");
+  font-weight: 1 1000;
+  font-style: oblique 0deg 10deg;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+/* start components */
+.contanier {
+  width: 90%;
+  margin: 0 auto;
+}
+/* end components */
+/* start main */
+/* start heading */
+main .heading {
+  background-color: var(--main-color);
+}
+/* start nav */
+main .heading .contanier nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  gap: 30%;
+  text-transform: uppercase;
+}
+main .heading .contanier nav a {
+  width: 20%;
+}
+main .heading .contanier nav a img {
+  width: 160px;
+  height: 60px;
+}
+main .heading .contanier nav ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+main .heading .contanier nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+main .heading .contanier nav ul li a:hover {
+  color: #acff00;
+}
+/* end nav */
+.heading .heading-content {
+  text-align: center;
+  color: white;
+}
+.heading .heading-content h1 {
+  font-size: 90px;
+  text-transform: uppercase;
+  line-height: 125px;
+  margin: 0;
+}
+.heading .heading-content h3 {
+  font-size: 40px;
+  margin: 0;
+  margin-top: -5px;
+}
+.heading .heading-content .categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.heading .heading-content .categories p {
+  margin-right: 15px;
+  background-color: #20b43f;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+/* end heading */
+/* end main */

@@ -101,68 +101,6 @@ const viewNumbers = () => {
 };
 viewNumbers();
 
-// select numbers section
-const numberSection = document.querySelector(".numbers");
-const allNumbers = document.querySelectorAll(".nums");
-
-// select goal section
-const goal = document.querySelector(".goal");
-
-let started = false;
-window.onscroll = () => {
-  let pageHeight = window.innerHeight;
-
-  //goal offSet top
-  let goalOffsetTop = goal.offsetTop; // distance from goal to page = 1885
-
-  //numbers offSet top
-  let numberSectionOffsetTop = numberSection.offsetTop;
-
-  // window scroll top
-  let windowScrollTop = this.pageYOffset;
-
-  if (
-    document.body.scrollTop > goalOffsetTop - pageHeight ||
-    document.documentElement.scrollTop > goalOffsetTop - pageHeight
-  ) {
-    if (!started) {
-      //   select cards
-      let allCard = document.querySelectorAll(".goal #carts-holder .card");
-      allCard.forEach((card) => {
-        card.style.opacity = "100%";
-        card.style.animation = "slideIn 2s";
-      });
-    }
-  }
-
-  if (windowScrollTop > numberSectionOffsetTop) {
-    if (!started) {
-      incrementNumber(allNumbers);
-      started = true;
-    }
-  }
-};
-
-function incrementNumber(el) {
-  const incrementIntervals = [];
-  el.forEach((e) => {
-    let currentNumber = 0;
-    const goal = parseInt(e.getAttribute("data-goal"));
-    const startCount = setInterval(() => {
-      const incrementStep = Math.ceil((goal - currentNumber) / 10);
-      if (currentNumber < goal) {
-        currentNumber += incrementStep;
-        if (currentNumber > goal) {
-          currentNumber = goal;
-        }
-        e.innerText = `${currentNumber}+`;
-      } else {
-        clearInterval(startCount);
-      }
-    }, 50);
-    incrementIntervals.push(startCount);
-  });
-}
 let starIcon = "\u2605";
 
 const products = [
@@ -260,3 +198,78 @@ viewProducts();
 const currentYear = new Date().getFullYear();
 const spanYear = document.getElementById("year");
 spanYear.innerHTML = currentYear;
+
+// select products section
+const productsHome = document.querySelector(".products-home");
+console.log(productsHome);
+
+// select numbers section
+const numberSection = document.querySelector(".numbers");
+const allNumbers = document.querySelectorAll(".nums");
+
+// select goal section
+const goal = document.querySelector(".goal");
+
+let started = false;
+window.onscroll = () => {
+  let pageHeight = window.innerHeight;
+
+  //goal offSet top
+  let goalOffsetTop = goal.offsetTop;
+
+  //numbers offSet top
+  let numberSectionOffsetTop = numberSection.offsetTop;
+
+  // products offSet Top
+  let productsOffSetTop = productsHome.offsetTop;
+
+  // window scroll top
+  let windowScrollTop = this.pageYOffset;
+
+  if (
+    document.body.scrollTop > goalOffsetTop - pageHeight ||
+    document.documentElement.scrollTop > goalOffsetTop - pageHeight
+  ) {
+    //   select cards
+    let allCard = document.querySelectorAll(".goal #carts-holder .card");
+    allCard.forEach((card) => {
+      card.style.opacity = "100%";
+      card.style.animation = "slideIn 2s";
+    });
+  }
+
+  if (windowScrollTop > productsOffSetTop) {
+    let allCard = document.querySelectorAll("#products-holder .product-card");
+    allCard.forEach((card) => {
+      card.style.opacity = "100%";
+      card.style.animation = "slideUp 2s";
+    });
+  }
+
+  if (windowScrollTop > numberSectionOffsetTop) {
+    if (!started) {
+      incrementNumber(allNumbers);
+      started = true;
+    }
+  }
+};
+function incrementNumber(el) {
+  const incrementIntervals = [];
+  el.forEach((e) => {
+    let currentNumber = 0;
+    const goal = parseInt(e.getAttribute("data-goal"));
+    const startCount = setInterval(() => {
+      const incrementStep = Math.ceil((goal - currentNumber) / 10);
+      if (currentNumber < goal) {
+        currentNumber += incrementStep;
+        if (currentNumber > goal) {
+          currentNumber = goal;
+        }
+        e.innerText = `${currentNumber}+`;
+      } else {
+        clearInterval(startCount);
+      }
+    }, 50);
+    incrementIntervals.push(startCount);
+  });
+}

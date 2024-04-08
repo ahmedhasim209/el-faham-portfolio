@@ -75,15 +75,14 @@ main .landing .contanier nav ul li a:hover {
 }
 .landing-content::before {
   content: "";
-  width: 240px;
-  height: 190px;
+  width: 275px;
+  height: 215px;
   background-image: url(../images/flower-about.webp);
-  top: 65px;
-  left: -95px;
+  top: 60px;
+  left: -140px;
   position: absolute;
   z-index: 100;
   background-size: auto;
-  rotate: 180deg;
 }
 .landing-content img {
   width: 500px;
@@ -101,3 +100,102 @@ main .landing .contanier nav ul li a:hover {
   width: 100%;
 }
 /* end landing */
+/* start time line */
+.time-line {
+  margin-top: var(--section-padding);
+  margin-bottom: var(--section-padding);
+  position: relative;
+}
+.time-line::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 114%;
+  background-color: var(--main-color);
+  top: -100px;
+  left: 142px;
+}
+.time-line .timeline-holder {
+  position: relative;
+}
+.time-line .timeline-holder::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  top: -110px;
+  left: 60px;
+  border-radius: 50%;
+}
+.time-line .timeline-holder::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: var(--main-color);
+  bottom: -74px;
+  left: 57px;
+  rotate: 45deg;
+}
+.time-line .timeline-holder .timeline-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.time-line .timeline-holder .timeline-card .number {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 30px;
+}
+.time-line .timeline-holder .timeline-card .timeline-text {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+.time-line .timeline-holder .timeline-card .timeline-text .year,
+.time-line .timeline-holder .timeline-card .timeline-text p {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border: 2px dashed var(--main-color);
+}
+.time-line .timeline-holder .timeline-card .timeline-text .year {
+  justify-content: center;
+  width: 110px;
+  background-color: white;
+  font-size: 35px;
+  font-weight: 600;
+  border-radius: 50%;
+  z-index: 100;
+}
+.time-line .timeline-holder .timeline-card .timeline-text p {
+  justify-content: flex-start;
+  padding-left: 60px;
+  margin-left: -50px;
+  border-radius: 15px;
+  z-index: -1;
+  background-color: #f3f3f3;
+  font-weight: 400;
+  line-height: 25px;
+  width: 70%;
+}
+.timeline-word {
+  position: absolute;
+  rotate: 90deg;
+  font-size: 215px;
+  font-weight: 600;
+  top: 389px;
+  right: -330px;
+  color: #f3f3f3;
+}
+/* end time line */

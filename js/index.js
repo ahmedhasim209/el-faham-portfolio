@@ -1,4 +1,3 @@
-// start home page
 const goals = [
   {
     imageBlack: "images/Manufacturer-black.webp",
@@ -229,7 +228,6 @@ const productsHolder = document.getElementById("products-holder");
 
 const viewProducts = () => {
   for (let i = 0; i < products.length; i++) {
-    console.log(products[i].rate);
     const product = document.createElement("div");
     product.classList.add("product-card");
     productsHolder.appendChild(product);
@@ -262,5 +260,3 @@ viewProducts();
 const currentYear = new Date().getFullYear();
 const spanYear = document.getElementById("year");
 spanYear.innerHTML = currentYear;
-// end home page
-// ----------------------------------------------

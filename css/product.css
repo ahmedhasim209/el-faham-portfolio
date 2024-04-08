@@ -92,6 +92,49 @@ main .heading .contanier nav ul li a:hover {
   cursor: pointer;
 }
 /* end heading */
+/* start products */
+.products {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+#product-holder {
+  padding-top: 50px;
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  row-gap: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+#product-holder .product-card {
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 1px #00000015;
+}
+#product-holder .product-card .image-holder {
+  margin: 15px;
+  width: 200px;
+  height: 125px;
+}
+#product-holder .product-card .image-holder .product-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#product-holder .product-card .product-title {
+  font-weight: 600;
+  font-size: 15px;
+}
+#product-holder .product-card i {
+  color: #ffc90a;
+}
+#product-holder .product-card .product-size {
+  font-weight: 600;
+}
+/* end products */
 /* start footer */
 footer {
   position: relative;
@@ -170,47 +213,4 @@ footer .rights {
   margin: 0;
 }
 /* end footer */
-/* start products */
-.products {
-  padding-top: var(--section-padding);
-  padding-bottom: var(--section-padding);
-}
-#product-holder {
-  padding-top: 50px;
-  display: grid;
-  width: 90%;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-  column-gap: 5px;
-  row-gap: 50px;
-  margin: 0 auto;
-  text-align: center;
-}
-#product-holder .product-card {
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 0px 10px 1px #00000015;
-}
-#product-holder .product-card .image-holder {
-  margin: 15px;
-  width: 200px;
-  height: 125px;
-}
-#product-holder .product-card .image-holder .product-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-#product-holder .product-card .product-title {
-  font-weight: 600;
-  font-size: 15px;
-}
-#product-holder .product-card i {
-  color: #ffc90a;
-}
-#product-holder .product-card .product-size {
-  font-weight: 600;
-}
-/* end products */
 /* end main */

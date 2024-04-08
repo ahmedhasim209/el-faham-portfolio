@@ -1,0 +1,63 @@
+:root {
+  --section-padding: 100px;
+  --main-color: #108824;
+  --secondary-color: #20b43f;
+  --hover-color: #acff00;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype");
+  font-weight: 1 1000;
+  font-style: oblique 0deg 10deg;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+/* start components */
+.contanier {
+  width: 90%;
+  margin: 0 auto;
+}
+/* end components */
+/* start main */
+/* start heading */
+main .landing {
+  background-color: var(--main-color);
+}
+/* start nav */
+main .landing .contanier nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  gap: 30%;
+  text-transform: uppercase;
+}
+main .landing .contanier nav a {
+  width: 20%;
+}
+main .landing .contanier nav a img {
+  width: 160px;
+  height: 60px;
+}
+main .landing .contanier nav ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+main .landing .contanier nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+main .landing .contanier nav ul li a:hover {
+  color: var(--hover-color);
+}
+/* end nav */

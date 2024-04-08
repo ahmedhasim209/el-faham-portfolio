@@ -23,7 +23,7 @@
 }
 /* end components */
 /* start main */
-/* start heading */
+/* start landing */
 main .landing {
   background-color: var(--main-color);
 }
@@ -61,3 +61,43 @@ main .landing .contanier nav ul li a:hover {
   color: var(--hover-color);
 }
 /* end nav */
+.landing-content {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: var(--section-padding);
+}
+.landing-content::before {
+  content: "";
+  width: 240px;
+  height: 190px;
+  background-image: url(../images/flower-about.webp);
+  top: 65px;
+  left: -95px;
+  position: absolute;
+  z-index: 100;
+  background-size: auto;
+  rotate: 180deg;
+}
+.landing-content img {
+  width: 500px;
+}
+.landing-content .text {
+  width: 51%;
+  margin-bottom: 0;
+}
+.landing-content .text p {
+  font-size: 33px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: white;
+  line-height: 1.5;
+  width: 100%;
+}
+/* end landing */

@@ -199,3 +199,20 @@ main .landing .contanier nav ul li a:hover {
   color: #f3f3f3;
 }
 /* end time line */
+/* start challenges */
+.challenges {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+  background-color: var(--main-color);
+  color: white;
+}
+.challenges h2 {
+  font-size: 45px;
+  margin: 15px;
+}
+.challenges p {
+  font-size: 30px;
+  margin: 0;
+}
+/* end challenges */

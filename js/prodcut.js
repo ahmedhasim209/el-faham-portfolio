@@ -5,7 +5,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "White-kidney-beans",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Whole-broad-beans.webp",
@@ -13,7 +13,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Whole-broad-beans",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Split-broad-beans.webp",
@@ -21,7 +21,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Split-broad-beans",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Whole-faba-beans.webp",
@@ -29,7 +29,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Whole-faba-beans",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Peanuts.webp",
@@ -37,7 +37,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Peanuts",
-    category: "",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Dry-lemon-machine-dried.webp",
@@ -45,7 +45,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Dry-lemon-machine-dried",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Dry-lemon.webp",
@@ -53,7 +53,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Dry-lemon",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Sesame-seeds.webp",
@@ -61,7 +61,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Sesame-seeds",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Whole-green-lentils.webp",
@@ -69,7 +69,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Whole-green-lentils",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Whole-red-lentils.webp",
@@ -77,7 +77,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Whole-red-lentils",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Split-red-lentils.webp",
@@ -85,7 +85,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Split-red-lentils",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Whole-green-peans.webp",
@@ -93,7 +93,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Whole-green-peans",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Split-green-peas.webp",
@@ -101,7 +101,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Split-green-peas",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Whole-yellow-peas.webp",
@@ -109,7 +109,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Whole-yellow-peas",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Split-yellow-peas.webp",
@@ -117,7 +117,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Split-yellow-peas",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Chickpeas.webp",
@@ -125,7 +125,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Chickpeas",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/lupins.webp",
@@ -133,7 +133,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "lupins",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Black-eye-beans.webp",
@@ -141,7 +141,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Black-eye-beans",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Red-kidney-beans.webp",
@@ -149,7 +149,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Red-kidney-beans",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Basmati-rice.webp",
@@ -157,7 +157,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Basmati-rice",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Popcorn.webp",
@@ -165,7 +165,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Popcorn",
-    category: "Pulses and Grains ",
+    category: "pulses",
   },
   {
     image: "../images/products-images/White-millet.webp",
@@ -173,7 +173,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "White-millet",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Yellow-millet.webp",
@@ -181,7 +181,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Yellow-millet",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Sorghum.webp",
@@ -189,7 +189,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Sorghum",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Barley-seeds.webp",
@@ -197,7 +197,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Barley-seeds",
-    category: "Pulses and Grains",
+    category: "pulses",
   },
   {
     image: "../images/products-images/Hibiscus.webp",
@@ -205,7 +205,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Hibiscus",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Dried-mellow.webp",
@@ -213,7 +213,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Dried-mellow",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Black-pepper.webp",
@@ -221,7 +221,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Black-pepper",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Coriander.webp",
@@ -229,7 +229,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Coriander",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Carawy-seeds.webp",
@@ -237,7 +237,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Carawy-seeds",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Fennel-seeds.webp",
@@ -245,7 +245,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Fennel-seeds",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Anise-seeds.webp",
@@ -253,7 +253,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Anise-seeds",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Cumin-seeds.webp",
@@ -261,7 +261,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Cumin-seeds",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Black-seeds.webp",
@@ -269,7 +269,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Black-seeds",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Dry-ginger.webp",
@@ -277,7 +277,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Dry-ginger",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Bay-laurel.webp",
@@ -285,7 +285,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Bay-laurel",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Nutmeg.webp",
@@ -293,7 +293,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Nutmeg",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Dried-garlic.webp",
@@ -301,7 +301,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Dried-garlic",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Asaliya-seeds.webp",
@@ -309,7 +309,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Asaliya-seeds",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Frankincense.webp",
@@ -317,7 +317,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Frankincense",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Galngal.webp",
@@ -325,7 +325,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Galngal",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Cigar-cinnamon.webp",
@@ -333,7 +333,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Cigar-cinnamon",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Mustard-seeds.webp",
@@ -341,7 +341,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Mustard-seeds",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Oats.webp",
@@ -349,7 +349,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Oats",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Cardamom.webp",
@@ -357,7 +357,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Cardamom",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Flax-seeds.webp",
@@ -365,7 +365,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Flax-seeds",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Fenugreek.webp",
@@ -373,7 +373,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Fenugreek",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Sunflower-seeds.webp",
@@ -381,7 +381,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Sunflower-seeds",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Pumpkin-Seeds.webp",
@@ -389,7 +389,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Pumpkin-Seeds",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Blanched-peanuts.webp",
@@ -397,7 +397,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Blanched-peanuts",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Split-blanched-peanuts.webp",
@@ -405,7 +405,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Split-blanched-peanuts",
-    category: "Herbs and Spices",
+    category: "herbs",
   },
   {
     image: "../images/products-images/Hazelnut-kernels.webp",
@@ -413,7 +413,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Hazelnut-kernels",
-    category: "Nuts",
+    category: "nuts",
   },
   {
     image: "../images/products-images/Balnched-hazelnut.webp",
@@ -421,7 +421,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Balnched-hazelnut",
-    category: "Nuts",
+    category: "nuts",
   },
   {
     image: "../images/products-images/Almond-kernels.webp",
@@ -429,7 +429,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Almond-kernels",
-    category: "Nuts",
+    category: "nuts",
   },
   {
     image: "../images/products-images/Pistachio-kernels.webp",
@@ -437,7 +437,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Pistachio-kernels",
-    category: "Nuts",
+    category: "nuts",
   },
   {
     image: "../images/products-images/Pistachio-green-skin.webp",
@@ -445,7 +445,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Pistachio-green-skin",
-    category: "Nuts",
+    category: "nuts",
   },
   {
     image: "../images/products-images/Cashew-kernels.webp",
@@ -453,7 +453,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Cashew-kernels",
-    category: "Nuts",
+    category: "nuts",
   },
   {
     image: "../images/products-images/Raw-walnut.webp",
@@ -461,7 +461,7 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Raw-walnut",
-    category: "Nuts",
+    category: "nuts",
   },
   {
     image: "../images/products-images/Walnut-kernels.webp",
@@ -469,40 +469,75 @@ const mainProducts = [
     rate: "starIcon",
     size: "Bag/25k",
     altImg: "Walnut-kernels",
-    category: "Nuts",
+    category: "nuts",
   },
 ];
 
 const productSection = document.querySelector(".products");
-const productHolder = document.getElementById("product-holder");
 
-const viewMainProducts = () => {
-  for (let i = 0; i < mainProducts.length; i++) {
-    const productCard = document.createElement("div");
-    productCard.classList.add("product-card");
-    productHolder.appendChild(productCard);
-    const prodImageHolder = document.createElement("div");
-    prodImageHolder.classList.add("image-holder");
-    const prodImage = document.createElement("img");
-    prodImage.classList.add("product-img");
-    const prodTitle = document.createElement("p");
-    prodTitle.classList.add("product-title");
-    const prodSize = document.createElement("p");
-    prodSize.classList.add("product-size");
-    productCard.appendChild(prodImageHolder);
-    prodImageHolder.appendChild(prodImage);
-    productCard.appendChild(prodTitle);
-    prodImage.src = mainProducts[i].image;
-    prodImage.alt = mainProducts[i].altImg;
-    prodTitle.innerHTML = mainProducts[i].title;
-    for (let j = 0; j < 5; j++) {
-      const prodRate = document.createElement("i");
-      prodRate.classList.add("fa-solid");
-      prodRate.classList.add("fa-star");
-      productCard.appendChild(prodRate);
-      productCard.appendChild(prodSize);
-    }
-    prodSize.innerHTML = mainProducts[i].size;
+function filterProducts(category) {
+  const productHolder = document.getElementById("product-holder");
+  productHolder.innerHTML = "";
+  if (category === "all") {
+    mainProducts.forEach((el) => {
+      const productCard = document.createElement("div");
+      productCard.classList.add("product-card");
+      productHolder.appendChild(productCard);
+      const prodImageHolder = document.createElement("div");
+      prodImageHolder.classList.add("image-holder");
+      const prodImage = document.createElement("img");
+      prodImage.classList.add("product-img");
+      const prodTitle = document.createElement("p");
+      prodTitle.classList.add("product-title");
+      const prodSize = document.createElement("p");
+      prodSize.classList.add("product-size");
+      productCard.appendChild(prodImageHolder);
+      prodImageHolder.appendChild(prodImage);
+      productCard.appendChild(prodTitle);
+      prodImage.src = el.image;
+      prodImage.alt = el.altImg;
+      prodTitle.innerHTML = el.title;
+      for (let j = 0; j < 5; j++) {
+        const prodRate = document.createElement("i");
+        prodRate.classList.add("fa-solid");
+        prodRate.classList.add("fa-star");
+        productCard.appendChild(prodRate);
+        productCard.appendChild(prodSize);
+      }
+      prodSize.innerHTML = el.size;
+    });
+  } else {
+    const filteredProducts = mainProducts.filter(
+      (product) => product.category === category
+    );
+    filteredProducts.forEach((el) => {
+      console.log("ahmed");
+      const productCard = document.createElement("div");
+      productCard.classList.add("product-card");
+      productHolder.appendChild(productCard);
+      const prodImageHolder = document.createElement("div");
+      prodImageHolder.classList.add("image-holder");
+      const prodImage = document.createElement("img");
+      prodImage.classList.add("product-img");
+      const prodTitle = document.createElement("p");
+      prodTitle.classList.add("product-title");
+      const prodSize = document.createElement("p");
+      prodSize.classList.add("product-size");
+      productCard.appendChild(prodImageHolder);
+      prodImageHolder.appendChild(prodImage);
+      productCard.appendChild(prodTitle);
+      prodImage.src = el.image;
+      prodImage.alt = el.altImg;
+      prodTitle.innerHTML = el.title;
+      for (let j = 0; j < 5; j++) {
+        const prodRate = document.createElement("i");
+        prodRate.classList.add("fa-solid");
+        prodRate.classList.add("fa-star");
+        productCard.appendChild(prodRate);
+        productCard.appendChild(prodSize);
+      }
+      prodSize.innerHTML = el.size;
+    });
   }
-};
-viewMainProducts();
+}
+filterProducts("all");

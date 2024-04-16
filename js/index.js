@@ -230,7 +230,7 @@ window.onscroll = () => {
     document.body.scrollTop > goalOffsetTop - pageHeight ||
     document.documentElement.scrollTop > goalOffsetTop - pageHeight
   ) {
-    //   select cards
+    // select cards
     let allCard = document.querySelectorAll(".goal #carts-holder .card");
     allCard.forEach((card) => {
       card.style.opacity = "100%";

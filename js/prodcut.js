@@ -511,7 +511,6 @@ function filterProducts(category) {
       (product) => product.category === category
     );
     filteredProducts.forEach((el) => {
-      console.log("ahmed");
       const productCard = document.createElement("div");
       productCard.classList.add("product-card");
       productHolder.appendChild(productCard);

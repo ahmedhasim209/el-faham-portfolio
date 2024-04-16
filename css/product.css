@@ -114,6 +114,15 @@ main .heading .contanier nav ul li a:hover {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0px 0px 10px 1px #00000015;
+  transition: 1s ease-in;
+}
+@keyframes slideUp {
+  0% {
+    transform: translatey(300%);
+  }
+  50% {
+    transform: translatey(0);
+  }
 }
 #product-holder .product-card .image-holder {
   margin: 15px;

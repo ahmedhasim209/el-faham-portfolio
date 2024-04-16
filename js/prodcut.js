@@ -540,3 +540,11 @@ function filterProducts(category) {
   }
 }
 filterProducts("all");
+
+const allProducts = document.querySelectorAll(".product-card");
+
+window.addEventListener("load", function () {
+  allProducts.forEach((e) => {
+    e.style.animation = "slideUp 2s";
+  });
+});

@@ -103,6 +103,7 @@
   border: none;
   border-radius: 40px;
   transition: 0.3s ease;
+  border: 2px solid white;
 }
 .landing .contanier .landing-contet button a {
   text-decoration: none;
@@ -113,9 +114,64 @@
 }
 .landing .contanier .landing-contet button:hover {
   background-color: transparent;
-  border: 2px solid #20b43f;
+  border-color: #20b43f;
 }
 .landing .contanier .landing-contet button:hover > a {
   color: white;
 }
 /* end landing */
+/* start numbers */
+.number {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  position: absolute;
+  z-index: 100;
+  top: 120vh;
+  left: -25px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  transform: translate(105px, -30px);
+  box-shadow: 0px 0px 20px 3px #00000030;
+}
+.number .num-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.number .num-card:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  width: 1.5px;
+  height: 50%;
+  right: -27px;
+  top: 15px;
+  background-color: #20b43f;
+}
+.number .num-card .images-holder {
+  width: 64px;
+  height: 64px;
+}
+.number .num-card .images-holder img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.number .num-card .nums {
+  font-weight: 600;
+  padding-top: 10px;
+}
+.number .num-card .title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 10px 0;
+}
+/* end numbers */

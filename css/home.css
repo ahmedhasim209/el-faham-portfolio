@@ -133,7 +133,7 @@
   position: absolute;
   z-index: 100;
   top: 120vh;
-  left: -25px;
+  left: -29px;
   background-color: white;
   padding: 15px;
   border-radius: 20px;
@@ -152,7 +152,7 @@
   position: absolute;
   width: 1.5px;
   height: 50%;
-  right: -27px;
+  right: -33px;
   top: 15px;
   background-color: #20b43f;
 }
@@ -175,3 +175,62 @@
   padding: 10px 0;
 }
 /* end numbers */
+/* strat brief */
+.brief {
+  width: 95%;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+.brief .image-holder {
+  width: 575px;
+  height: 415px;
+}
+.brief .image-holder img {
+  max-width: 575px;
+  height: 415px;
+}
+.brief .brief-content {
+  padding-left: 25px;
+}
+.brief .brief-content h3 {
+  margin: 0;
+  color: #4ba950;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 39px;
+}
+.brief .brief-content p {
+  color: #4a4a4a;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+.brief .brief-content button {
+  padding: 15px 20px;
+  background-color: #20b43f;
+  border: none;
+  border-radius: 40px;
+  transition: 0.3s ease;
+  border: 2px solid #20b43f;
+  margin-top: 5px;
+}
+.brief .brief-content button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 15px 25px;
+}
+.brief .brief-content button:hover {
+  background-color: transparent;
+  border-color: #20b43f;
+}
+.brief .brief-content button:hover > a {
+  color: #20b43f;
+}
+/* end brief */

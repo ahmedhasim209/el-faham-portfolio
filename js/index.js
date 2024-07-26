@@ -104,7 +104,6 @@ function incrementNumber(el) {
   el.forEach((e) => {
     let currentNumber = 0;
     const goal = parseInt(e.getAttribute("data-goal"));
-    console.log(goal);
     const startCount = setInterval(() => {
       const incrementStep = Math.ceil((goal - currentNumber) / 6);
       if (currentNumber < goal) {
@@ -119,6 +118,88 @@ function incrementNumber(el) {
     }, 50);
     incrementIntervals.push(startCount);
   });
+
+  const products = [
+    {
+      image: "images/best seller images/white-kidney-beans.webp",
+      title: "White kidney beans",
+      altImg: "White-kidney-beans",
+      size: "Bag:Weight upon request",
+    },
+    {
+      image: "images/best seller images/whole-broad-beans.webp",
+      title: "Whole broad beans",
+      altImg: "whole-broad-beans",
+      size: "Bag:Weight upon request",
+    },
+    {
+      image: "images/best seller images/golden-sesame-seeds.webp",
+      title: "Golden Sesame Seeds",
+      altImg: "golden-sesame-seeds",
+      size: "Bag:Weight upon request",
+    },
+    {
+      image: "images/best seller images/split-red-lentils.webp",
+      title: "Split red lentils",
+      altImg: "split-red-lentils",
+      size: "Bag:Weight upon request",
+    },
+    {
+      image: "images/best seller images/cumin-seeds.webp",
+      title: "Cumin seeds",
+      altImg: "cumin-seeds",
+      size: "Bag:Weight upon request",
+    },
+    {
+      image: "images/best seller images/black-pepper.webp",
+      title: "Black pepper",
+      altImg: "black-pepper",
+      size: "Bag:Weight upon request",
+    },
+    {
+      image: "images/best seller images/carawy-seeds.webp",
+      title: "Carawy seeds",
+      altImg: "carawy-seeds",
+      size: "Bag:Weight upon request",
+    },
+    {
+      image: "images/best seller images/peanuts.webp",
+      title: "Peanuts",
+      altImg: "peanuts",
+      size: "Bag:Weight upon request",
+    },
+  ];
+
+  const productsHolder = document.getElementById("products-holder");
+
+  const viewProducts = () => {
+    for (let i = 0; i < products.length; i++) {
+      const product = document.createElement("div");
+      product.classList.add("product-card");
+      productsHolder.appendChild(product);
+      const prodImageHolder = document.createElement("div");
+      prodImageHolder.classList.add("image-holder");
+      const prodImage = document.createElement("img");
+      prodImage.classList.add("product-img");
+      const prodTitle = document.createElement("p");
+      prodTitle.classList.add("product-title");
+      const prodSize = document.createElement("p");
+      prodSize.classList.add("product-size");
+      // const prodbag = document.createElement("i");
+      // prodRate.classList.add("fa-solid");
+      // prodRate.classList.add("fa-bag-shopping");
+      product.appendChild(prodImageHolder);
+      prodImageHolder.appendChild(prodImage);
+      product.appendChild(prodTitle);
+      product.appendChild(prodSize);
+      // prodSize.appendChild(prodbag);
+      prodImage.src = products[i].image;
+      prodImage.alt = products[i].altImg;
+      prodTitle.innerHTML = products[i].title;
+      prodSize.innerHTML = products[i].size;
+    }
+  };
+  viewProducts();
 
   // if (
   //   document.body.scrollTop > goalOffsetTop - pageHeight ||
@@ -203,97 +284,7 @@ function incrementNumber(el) {
 
 // let starIcon = "\u2605";
 
-// const products = [
-//   {
-//     image: "images/White kidney beans.webp",
-//     title: "White kidney beans",
-//     rate: "starIcon",
-//     size: "Bag/25k",
-//     altImg: "White-kidney-beans",
-//   },
-//   {
-//     image: "images/Whole broad beans.webp",
-//     title: "Whole broad beans",
-//     rate: "starIcon",
-//     size: "Bag/25k",
-//     altImg: "Whole-broad-beans",
-//   },
-//   {
-//     image: "images/lupins.webp",
-//     title: "lupins",
-//     rate: "starIcon",
-//     size: "Bag/25k",
-//     altImg: "lupins",
-//   },
-//   {
-//     image: "images/Split red lentils.webp",
-//     title: "Split red lentils",
-//     rate: "starIcon",
-//     size: "Bag/25k",
-//     altImg: "Split-red-lentils",
-//   },
-//   {
-//     image: "images/Cumin seeds.webp",
-//     title: "Cumin seeds",
-//     rate: "starIcon",
-//     size: "Bag/25k",
-//     altImg: "Cumin-seeds",
-//   },
-//   {
-//     image: "images/Carawy seeds.webp",
-//     title: "Carawy seeds",
-//     rate: "starIcon",
-//     size: "Bag/25k",
-//     altImg: "Carawy-seeds",
-//   },
-//   {
-//     image: "images/Black pepper.webp",
-//     title: "Black pepper",
-//     rate: "starIcon",
-//     size: "Bag/25k",
-//     altImg: "Black-pepper",
-//   },
-//   {
-//     image: "images//Peanuts.webp",
-//     title: "Peanuts",
-//     rate: "starIcon",
-//     size: "Bag/25k",
-//     altImg: "Peanuts",
-//   },
-// ];
-
-// const productsHolder = document.getElementById("products-holder");
-
-// const viewProducts = () => {
-//   for (let i = 0; i < products.length; i++) {
-//     const product = document.createElement("div");
-//     product.classList.add("product-card");
-//     productsHolder.appendChild(product);
-//     const prodImageHolder = document.createElement("div");
-//     prodImageHolder.classList.add("image-holder");
-//     const prodImage = document.createElement("img");
-//     prodImage.classList.add("product-img");
-//     const prodTitle = document.createElement("p");
-//     prodTitle.classList.add("product-title");
-//     const prodSize = document.createElement("p");
-//     prodSize.classList.add("product-size");
-//     product.appendChild(prodImageHolder);
-//     prodImageHolder.appendChild(prodImage);
-//     product.appendChild(prodTitle);
-//     prodImage.src = products[i].image;
-//     prodImage.alt = products[i].altImg;
-//     prodTitle.innerHTML = products[i].title;
-//     for (let j = 0; j < 5; j++) {
-//       const prodRate = document.createElement("i");
-//       prodRate.classList.add("fa-solid");
-//       prodRate.classList.add("fa-star");
-//       product.appendChild(prodRate);
-//       product.appendChild(prodSize);
-//     }
-//     prodSize.innerHTML = products[i].size;
-//   }
-// };
-// viewProducts();
+//
 
 // const currentYear = new Date().getFullYear();
 // const spanYear = document.getElementById("year");

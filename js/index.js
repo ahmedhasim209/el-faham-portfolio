@@ -185,18 +185,21 @@ function incrementNumber(el) {
       prodTitle.classList.add("product-title");
       const prodSize = document.createElement("p");
       prodSize.classList.add("product-size");
-      // const prodbag = document.createElement("i");
-      // prodRate.classList.add("fa-solid");
-      // prodRate.classList.add("fa-bag-shopping");
+      const prodBag = document.createElement("i");
+      prodBag.classList.add("fa-solid");
+      prodBag.classList.add("fa-bag-shopping");
+      const sizeHolder = document.createElement("div");
+      sizeHolder.classList.add("size-holder");
       product.appendChild(prodImageHolder);
       prodImageHolder.appendChild(prodImage);
       product.appendChild(prodTitle);
-      product.appendChild(prodSize);
-      // prodSize.appendChild(prodbag);
+      product.appendChild(sizeHolder);
+      sizeHolder.appendChild(prodSize);
       prodImage.src = products[i].image;
       prodImage.alt = products[i].altImg;
       prodTitle.innerHTML = products[i].title;
       prodSize.innerHTML = products[i].size;
+      prodSize.parentNode.insertBefore(prodBag, prodSize);
     }
   };
   viewProducts();

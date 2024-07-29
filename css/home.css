@@ -388,7 +388,7 @@
 /* end best seller */
 /* start process */
 .process {
-  padding-bottom: var(--section-padding);
+  padding-bottom: 50px;
 }
 .process .contanier {
   width: 63%;
@@ -400,6 +400,7 @@
   font-weight: 700;
   line-height: 48px;
   color: #4ba950;
+  margin-bottom: 0;
 }
 .process .cart-holder {
   padding-top: 50px;

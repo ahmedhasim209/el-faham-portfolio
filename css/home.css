@@ -499,3 +499,56 @@
   outline: none;
 }
 /* end news letter */
+/* start contact us */
+.contact-us {
+  padding-bottom: var(--section-padding);
+}
+.contact-us h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: center;
+  color: #4ba950;
+}
+.contact-us .contacts-contanier {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+.contact-us .contacts-contanier .contacts-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact-us .contacts-contanier .contacts-box i {
+  color: #20b43f;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #4ba9501a;
+  font-size: 20px;
+}
+.contact-us .contacts-contanier .contacts-box:nth-child(2) i {
+  width: 50px;
+  height: 50px;
+}
+.contact-us .contacts-contanier .contacts-box h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  margin: 0;
+  margin-top: 15px;
+}
+.contact-us .contacts-contanier .contacts-box p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #4ba950;
+  margin: 0;
+  margin-top: 15px;
+}
+/* end contact us */

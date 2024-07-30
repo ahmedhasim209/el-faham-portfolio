@@ -393,6 +393,8 @@ const mainProducts = [
   },
 ];
 
+
+
 // const productSection = document.querySelector(".products");
 
 // function filterProducts(category) {

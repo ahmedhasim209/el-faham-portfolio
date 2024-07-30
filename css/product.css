@@ -100,3 +100,30 @@
   color: #dcdcdc;
 }
 /* end heading */
+/* start category */
+.categories {
+  padding-top: 50px;
+}
+.categories .categories-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.categories .categories-box p {
+  border: 1px solid #20b43f;
+  color: #20b43f;
+  margin-right: 15px;
+  background-color: transparent;
+  padding: 10px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.categories .categories-box p:hover {
+  background-color: #20b43f;
+  color: white;
+}
+/* end category */

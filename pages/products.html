@@ -56,14 +56,41 @@
       <div class="categories">
         <div class="contanier">
           <div class="categories-box">
-            <p onclick="filterProducts('all')">All</p>
-            <p onclick="filterProducts('pulses')">Pulses and Grains</p>
-            <p onclick="filterProducts('herbs')">Herbs and Spices</p>
-            <p onclick="filterProducts('nuts')">Nuts</p>
+            <p
+              class="active kind"
+              onclick="filterProducts('all'); changeBackground(this);"
+            >
+              All
+            </p>
+            <p
+              class="kind"
+              onclick="filterProducts('pulses'); changeBackground(this);"
+            >
+              Pulses and Grains
+            </p>
+            <p
+              class="kind"
+              onclick="filterProducts('herbs'); changeBackground(this);"
+            >
+              Herbs and Spices
+            </p>
+            <p
+              class="kind"
+              onclick="filterProducts('nuts'); changeBackground(this);"
+            >
+              Nuts
+            </p>
           </div>
         </div>
       </div>
       <!-- end category -->
+      <!-- start products -->
+      <section class="products">
+        <div class="contanier">
+          <div id="product-holder"></div>
+        </div>
+      </section>
+      <!-- end products -->
     </main>
     <!-- start main -->
     <script src="../js/prodcut.js"></script>

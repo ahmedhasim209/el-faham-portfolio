@@ -63,7 +63,7 @@ const mainProducts = [
     category: "pulses",
   },
   {
-    image: "../images/products-images/Whole-red-lentils.webp",
+    image: "../images/products-images/whole-red-lentils.webp",
     title: "Whole red lentils",
     size: "Bag:Weight upon request",
     altImg: "Whole-red-lentils",
@@ -280,13 +280,6 @@ const mainProducts = [
     category: "herbs",
   },
   {
-    image: "../images/products-images/Cigar-cinnamon.webp",
-    title: "Cigar cinnamon",
-    size: "Bag:Weight upon request",
-    altImg: "Cigar-cinnamon",
-    category: "herbs",
-  },
-  {
     image: "../images/products-images/oats.webp",
     title: "Oats",
     size: "Bag:Weight upon request",
@@ -333,6 +326,13 @@ const mainProducts = [
     title: "Blanched peanuts",
     size: "Bag:Weight upon request",
     altImg: "Blanched peanuts",
+    category: "herbs",
+  },
+  {
+    image: "../images/products-images/split-blanched-peanuts.webp",
+    title: "Split blanched peanuts",
+    size: "Bag:Weight upon request",
+    altImg: "split-blanched-peanuts",
     category: "herbs",
   },
   {

@@ -281,3 +281,29 @@
   line-height: 15px;
 }
 /* end why us */
+/* start team */
+.team {
+  text-align: center;
+  padding-bottom: var(--section-padding);
+}
+.team .heading {
+  width: 100%;
+}
+.team .heading h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #4ba950;
+}
+.team .heading p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #4a4a4a;
+}
+.team img {
+  width: 1200px;
+  height: 500px;
+  padding-top: 25px;
+}
+/* end team */

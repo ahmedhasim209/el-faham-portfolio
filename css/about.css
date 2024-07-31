@@ -189,3 +189,37 @@
   padding-top: 15px;
 }
 /* end Success */
+/* start challenge */
+.challenges {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.challenges .content-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+.challenges .content-holder img {
+  width: 620px;
+  height: 700px;
+}
+.challenges .content-holder .text-content {
+  margin-top: -15px;
+}
+.challenges .content-holder .text-content h4 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 39px;
+  color: #4ba950;
+  margin: 30px 0px;
+}
+.challenges .content-holder .text-content p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #4a4a4a;
+}
+/* end challenge */

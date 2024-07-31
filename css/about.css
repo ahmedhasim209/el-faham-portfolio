@@ -283,6 +283,7 @@
 /* end why us */
 /* start team */
 .team {
+  padding-top: var(--section-padding);
   text-align: center;
   padding-bottom: var(--section-padding);
 }
@@ -294,6 +295,7 @@
   font-weight: 700;
   line-height: 48px;
   color: #4ba950;
+  margin: 0;
 }
 .team .heading p {
   font-size: 18px;
@@ -307,3 +309,4 @@
   padding-top: 25px;
 }
 /* end team */
+

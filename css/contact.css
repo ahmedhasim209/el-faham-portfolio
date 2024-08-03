@@ -217,3 +217,58 @@
   line-height: 19px;
 }
 /* end heading */
+/* start footer */
+footer {
+  background-color: #4ba950;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+footer a {
+  width: 20%;
+}
+footer img {
+  width: 200px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+footer .pages ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin: 20px auto;
+  padding: 0;
+}
+footer .pages ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .icons-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+footer .icons-holder i {
+  color: #20b43f;
+  padding: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+footer p {
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+}
+/* end footer */

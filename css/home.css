@@ -84,6 +84,7 @@
   text-align: center;
   z-index: 100;
   color: white;
+  width: 100%;
 }
 .landing .contanier .landing-contet h3 {
   font-size: 32px;
@@ -118,6 +119,21 @@
 }
 .landing .contanier .landing-contet button:hover > a {
   color: white;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .landing {
+    background-position: center;
+  }
+  .landing .contanier .landing-contet h3 {
+    font-size: 25px;
+  }
+  .landing .contanier .landing-contet h1 {
+    font-size: 40px;
+  }
+  .landing .contanier .landing-contet button {
+    padding: 15px 10px;
+  }
 }
 /* end landing */
 /* start numbers */
@@ -174,6 +190,22 @@
   margin: 0;
   padding: 10px 0;
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .number {
+    transform: translate(70px, -15px);
+  }
+  .number .num-card:not(:last-child)::before {
+    right: -15px;
+  }
+  .number .num-card .images-holder {
+    width: 50px;
+    height: 50px;
+  }
+  .number .num-card .title {
+    font-size: 12px;
+  }
+}
 /* end numbers */
 /* strat brief */
 .brief {
@@ -191,8 +223,8 @@
   height: 415px;
 }
 .brief .image-holder img {
-  max-width: 575px;
-  height: 415px;
+  width: 100%;
+  height: 100%;
 }
 .brief .brief-content {
   padding-left: 25px;
@@ -232,6 +264,31 @@
 }
 .brief .brief-content button:hover > a {
   color: #20b43f;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .brief .image-holder {
+    width: 300px;
+    height: 320px;
+  }
+  .brief .image-holder img {
+    width: 300px;
+    height: 320px;
+  }
+  .brief .brief-content h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .brief .brief-content p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .brief .brief-content button {
+    padding: 12px 0px;
+  }
+  .brief .brief-content button a {
+    font-size: 12px;
+  }
 }
 /* end brief */
 /* start why us */
@@ -291,6 +348,37 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .why-us {
+    padding-top: 50px;
+  }
+  .why-us .heading h2 {
+    font-size: 30px;
+    line-height: 29px;
+  }
+  .why-us .heading p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .why-us .features .features-cart {
+    width: 127px;
+    height: 147px;
+    padding: 10px;
+  }
+  .why-us .features .features-cart .icon-holder {
+    width: 32px;
+    height: 32px;
+  }
+  .why-us .features .features-cart h4 {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .why-us .features .features-cart p {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 /* end why us */
 /* start best seller */
@@ -385,6 +473,49 @@
 .best-seller button:hover > a {
   color: #20b43f;
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .best-seller {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .best-seller .heading h2 {
+    font-size: 30px;
+    line-height: 29px;
+  }
+  .best-seller .heading p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  #products-holder {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  #products-holder .product-card .image-holder {
+    width: 150px;
+    height: 150px;
+  }
+  #products-holder .product-card .product-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  #products-holder .product-card .size-holder .product-size {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .best-seller button {
+    padding: 12px 0px;
+  }
+  .best-seller button a {
+    font-size: 12px;
+  }
+}
 /* end best seller */
 /* start process */
 .process {
@@ -434,6 +565,24 @@
   margin: 0;
   text-align: center;
   margin-top: 15px;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .process .contanier {
+    width: 70%;
+  }
+  .process h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .process .cart-holder {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .process .process-cart p {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 /* end process */
 /* start news letter */
@@ -498,6 +647,26 @@
 .news-letter .news-box .news-content input:focus {
   outline: none;
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .news-letter {
+    padding-bottom: 50px;
+  }
+  .news-letter .news-box {
+    width: 750px;
+    height: 250px;
+  }
+  .news-letter .news-box .news-content h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .news-letter .news-box .news-content input {
+    padding: 12px 15px;
+  }
+  .news-letter .news-box .news-content button {
+    padding: 12px 25px;
+  }
+}
 /* end news letter */
 /* start contact us */
 .contact-us {
@@ -550,6 +719,24 @@
   color: #4ba950;
   margin: 0;
   margin-top: 15px;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-us {
+    padding-bottom: 50px;
+  }
+  .contact-us h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .contact-us .contacts-contanier .contacts-box h4 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contact-us .contacts-contanier .contacts-box p {
+    font-size: 12px;
+    line-height: 24px;
+  }
 }
 /* end contact us */
 /* start footer */
@@ -606,4 +793,55 @@ footer p {
   padding: 0;
   padding-top: 20px;
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  footer img {
+    width: 133px;
+    height: 41px;
+  }
+  footer .pages ul {
+    width: 45%;
+  }
+  footer .pages ul li a {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  footer .icons-holder {
+    width: 30%;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
 /* end footer */
+/* Extra small devices (phones, 0-575px) */
+@media (max-width: 575px) {
+  /* Your styles here */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Your styles here */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Your styles here */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Your styles here */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Your styles here */
+}
+
+/* Ultra large devices (4K and larger, 1600px and up) */
+@media (min-width: 1600px) {
+  /* Your styles here */
+}

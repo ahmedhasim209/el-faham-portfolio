@@ -22,3 +22,198 @@
   margin: 0 auto;
 }
 /* end components */
+/* start heading */
+.heading-conact {
+  position: relative;
+  height: 150vh;
+  background-image: url(../images/contact-background.webp);
+  background-size: cover;
+}
+.heading-conact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.516);
+  z-index: 1;
+}
+/* start nav */
+.heading-conact .contanier nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  gap: 30%;
+  z-index: 100;
+}
+.heading-conact .contanier nav a {
+  width: 20%;
+}
+.heading-conact .contanier nav a img {
+  width: 200px;
+  height: 60px;
+}
+.heading-conact .contanier nav ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.heading-conact .contanier nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.heading-conact .contanier nav ul li a:hover {
+  color: #20b43f;
+}
+/* end nav */
+.heading-conact .conact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background-color: white;
+  width: 1100px;
+  height: 750px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.heading-conact .conact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 35%;
+  background-color: #4ba950;
+  z-index: -1;
+}
+.heading-conact .conact .conact-holder {
+  padding: 45px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+}
+.heading-conact .conact .conact-holder .conact-info {
+  width: 500px;
+}
+.heading-conact .conact .conact-holder .conact-info .heading-text {
+  margin-bottom: 30px;
+}
+.heading-conact .conact .conact-holder .conact-info .heading-text h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0;
+}
+.heading-conact .conact .conact-holder .conact-info .heading-text h3 span {
+  color: #4ba950;
+}
+.heading-conact .conact .conact-holder .conact-info .heading-text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4a4a4a;
+  margin: 0;
+}
+.heading-conact .conact .conact-holder .conact-info .inputs-holder {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.heading-conact .conact .conact-holder .conact-info .inputs-holder label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4a4a4a;
+  text-align: start;
+}
+.heading-conact .conact .conact-holder .conact-info .inputs-holder input {
+  margin-bottom: 20px;
+  width: 430px;
+  outline: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+}
+.heading-conact .conact .conact-holder .conact-info .inputs-holder textarea {
+  border: 1px solid #dcdcdc;
+  outline: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  width: 430px;
+  height: 120px;
+  resize: none;
+}
+.heading-conact .conact .conact-holder .conact-info .inputs-holder button {
+  margin-top: 20px;
+  width: 430px;
+  border: none;
+  background-color: #4ba950;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 16px;
+}
+.heading-conact .conact .conact-holder .map {
+  width: 500px;
+  height: 500px;
+  margin-top: 57px;
+}
+.heading-conact .conact .conact-holder .map iframe {
+  margin: 0 auto;
+  border-radius: 12px;
+}
+.heading-conact .conact .conacts-numbers {
+  padding-left: 45px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 670px;
+}
+.heading-conact .conact .conacts-numbers i {
+  color: #4ba950;
+  text-align: start;
+  font-size: 24px;
+  margin-right: -40px;
+  margin-bottom: 12px;
+}
+.heading-conact .conact .conacts-numbers .numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.heading-conact .conact .conacts-numbers .numbers p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  margin: 0;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+.heading-conact .conact .conacts-numbers .numbers span {
+  color: #4ba950;
+  font-size: 12.22px;
+  font-weight: 400;
+  line-height: 19px;
+}
+/* end heading */

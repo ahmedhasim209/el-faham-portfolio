@@ -58,6 +58,9 @@
   width: 200px;
   height: 60px;
 }
+.landing .contanier nav .burger {
+  display: none;
+}
 .heading .contanier nav ul {
   display: flex;
   list-style: none;
@@ -65,6 +68,9 @@
   justify-content: space-evenly;
   flex-wrap: nowrap;
   flex-direction: row;
+}
+.landing .contanier nav ul i {
+  display: none;
 }
 .heading .contanier nav ul li a {
   text-decoration: none;
@@ -81,7 +87,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 100;
+  z-index: 1;
 }
 .heading .heading-contet h1 {
   margin: 0;
@@ -98,6 +104,77 @@
   font-weight: 500;
   line-height: 29px;
   color: #dcdcdc;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .heading {
+    position: relative;
+    height: 100vh;
+    background-position: center;
+    overflow: hidden;
+  }
+  .heading .contanier nav {
+    padding-top: 25px;
+  }
+  .heading .heading-contet h1 {
+    font-size: 30px;
+    margin: 20px auto;
+    line-height: 35px;
+  }
+  .heading .heading-contet p {
+    font-size: 16px;
+    line-height: 14.65px;
+  }
+  .heading .contanier nav ul.close {
+    position: absolute;
+    z-index: 1001;
+    width: 111%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    right: -450px;
+    top: 0;
+    transition: 0.5s ease-out;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .heading .contanier nav ul.open {
+    position: absolute;
+    z-index: 1001;
+    width: 111%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    right: -19px;
+    top: 0;
+    transition: 0.5s ease-out;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  #close {
+    display: block;
+    font-size: 32px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+  .heading .contanier nav ul li a {
+    color: #4a4a4a;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .heading .contanier nav ul li a:hover {
+    color: #4a4a4a;
+  }
+  .heading .contanier nav .burger {
+    display: block;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -139,6 +216,17 @@
 .categories .categories-box .active {
   background-color: #20b43f;
   color: white;
+}
+@media (max-width: 767px) {
+  .categories .categories-box {
+    padding-bottom: 25px;
+    gap: 5px;
+  }
+  .categories .categories-box p {
+    padding: 5px 11px;
+    font-size: 12px;
+    margin: 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .categories .categories-box {
@@ -208,6 +296,35 @@
   font-weight: 500;
   line-height: 25px;
   margin: 0;
+}
+@media (max-width: 767px) {
+  #product-holder {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #product-holder .product-card {
+    padding: 10px;
+  }
+  #product-holder .product-card .image-holder {
+    width: 100px;
+    height: 100px;
+  }
+  #product-holder .product-card .product-title {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  #product-holder .product-card:nth-child(24) .product-title {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  #product-holder .product-card:nth-child(34) .product-title {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  #product-holder .product-card .size-holder .product-size {
+    font-size: 9px;
+    line-height: 10px;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -289,6 +406,24 @@ footer p {
   margin: 0;
   padding: 0;
   padding-top: 20px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  footer .pages ul {
+    width: 85%;
+  }
+  footer .pages ul li a {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  footer .icons-holder {
+    width: 65%;
+    gap: 7.5px;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   footer img {

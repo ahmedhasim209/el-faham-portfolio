@@ -1,13 +1,13 @@
-// const buttonScroll = document.querySelectorAll(".time-scroll");
+links = document.getElementById("links");
+burgerIcon = document.getElementById("burger-icon");
+xIcon = document.getElementById("close");
 
-// function scrollSections(elements) {
-//   elements.forEach((ele) => {
-//     ele.addEventListener("click", (e) => {
-//       e.preventDefault();
-//       document.querySelector(e.target.dataset.section).scrollIntoView({
-//         behavior: "smooth",
-//       });
-//     });
-//   });
-// }
-// scrollSections(buttonScroll);
+burgerIcon.addEventListener("click", () => {
+  links.classList.add("open");
+  links.classList.remove("close");
+});
+xIcon = document.getElementById("close");
+xIcon.addEventListener("click", () => {
+  links.classList.remove("open");
+  links.classList.add("close");
+});

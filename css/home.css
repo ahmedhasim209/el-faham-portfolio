@@ -53,6 +53,9 @@
   flex-wrap: nowrap;
   flex-direction: row;
 }
+.landing .contanier nav ul i {
+  display: none;
+}
 .landing .contanier nav ul li a {
   text-decoration: none;
   color: white;

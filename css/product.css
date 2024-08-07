@@ -58,7 +58,7 @@
   width: 200px;
   height: 60px;
 }
-.landing .contanier nav .burger {
+.heading .contanier nav .burger {
   display: none;
 }
 .heading .contanier nav ul {
@@ -69,7 +69,7 @@
   flex-wrap: nowrap;
   flex-direction: row;
 }
-.landing .contanier nav ul i {
+#close {
   display: none;
 }
 .heading .contanier nav ul li a {

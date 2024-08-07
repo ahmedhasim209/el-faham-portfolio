@@ -99,6 +99,20 @@
   line-height: 29px;
   color: #dcdcdc;
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading {
+    background-position: center;
+  }
+  .heading .heading-contet h1 {
+    font-size: 35px;
+    line-height: 60px;
+  }
+  .heading .heading-contet p {
+    font-size: 17px;
+    line-height: 19.54px;
+  }
+}
 /* end heading */
 /* start category */
 .categories {
@@ -125,6 +139,15 @@
 .categories .categories-box .active {
   background-color: #20b43f;
   color: white;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .categories .categories-box {
+    padding-bottom: 25px;
+  }
+  .categories .categories-box p {
+    padding: 10px 30px;
+    font-size: 17px;
+  }
 }
 /* end category */
 /* start products */
@@ -163,13 +186,9 @@
   text-align: center;
 }
 #product-holder .product-card:nth-child(24) .product-title {
-  /* padding: 0px 22px;
-  margin: 0; */
   font-size: 22px;
 }
 #product-holder .product-card:nth-child(34) .product-title {
-  /* padding: 0px 22px;
-  margin: 0; */
   font-size: 20px;
 }
 #product-holder .product-card .size-holder {
@@ -190,6 +209,33 @@
   line-height: 25px;
   margin: 0;
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #product-holder {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #product-holder .product-card .image-holder {
+    width: 150px;
+    height: 150px;
+  }
+  #product-holder .product-card .product-title {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  #product-holder .product-card:nth-child(24) .product-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  #product-holder .product-card:nth-child(34) .product-title {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  #product-holder .product-card .size-holder .product-size {
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
 /* end products */
 /* start footer */
 footer {
@@ -206,7 +252,6 @@ footer img {
   height: 60px;
   margin-bottom: 10px;
 }
-
 footer .pages ul {
   list-style: none;
   display: flex;
@@ -244,5 +289,25 @@ footer p {
   margin: 0;
   padding: 0;
   padding-top: 20px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer img {
+    width: 133px;
+    height: 41px;
+  }
+  footer .pages ul {
+    width: 45%;
+  }
+  footer .pages ul li a {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  footer .icons-holder {
+    width: 30%;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 /* end footer */

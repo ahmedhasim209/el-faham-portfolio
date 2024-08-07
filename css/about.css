@@ -81,7 +81,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 100;
+  z-index: 1;
 }
 .heading-about .heading-contet h1 {
   margin: 0;
@@ -98,6 +98,22 @@
   font-weight: 500;
   line-height: 29px;
   color: #dcdcdc;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading-about {
+    background-position: center;
+  }
+  .heading-about .heading-contet h1 {
+    font-size: 30px;
+    line-height: 60px;
+  }
+  .heading-about .heading-contet p {
+    font-size: 16px;
+    text-align: left;
+    margin: 0 auto;
+    width: fit-content;
+  }
 }
 /* end heading */
 /* start story */
@@ -149,6 +165,26 @@
   line-height: 30px;
   color: #4a4a4a;
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .story .story-holder {
+    width: 90%;
+    gap: 20px;
+    margin: 0 auto;
+  }
+  .story .story-holder .images-holder img {
+    width: 200px;
+    height: 230px;
+  }
+  .story .story-holder .content-holder h3 {
+    font-size: 22px;
+    line-height: 26.86px;
+  }
+  .story .story-holder .content-holder p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 /* end story */
 /* start Success */
 .Success {
@@ -188,6 +224,26 @@
   padding-bottom: 30px;
   padding-top: 15px;
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Success {
+    padding-top: 50px;
+  }
+  .Success .section-holder .top-content h3,
+  .Success .section-holder .bottom-contect h3 {
+    font-size: 24px;
+    line-height: 29.3px;
+  }
+  .Success .section-holder img {
+    width: 720px;
+    height: 440px;
+  }
+  .Success .section-holder .top-content p,
+  .Success .section-holder .bottom-contect p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
 /* end Success */
 /* start challenge */
 .challenges {
@@ -221,6 +277,31 @@
   font-weight: 500;
   line-height: 30px;
   color: #4a4a4a;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .challenges {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .challenges .content-holder {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .challenges .content-holder img {
+    width: 100%;
+    height: 770px;
+    border-radius: 35px;
+  }
+  .challenges .content-holder .text-content h4 {
+    font-size: 24px;
+    line-height: 29.3px;
+  }
+  .challenges .content-holder .text-content p {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
 /* end challenge */
 /* start why us */
@@ -280,6 +361,37 @@
   font-size: 12px;
   line-height: 15px;
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .why-us {
+    padding-top: 50px;
+  }
+  .why-us .heading h2 {
+    font-size: 30px;
+    line-height: 29px;
+  }
+  .why-us .heading p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .why-us .features .features-cart {
+    width: 127px;
+    height: 170px;
+    padding: 10px;
+  }
+  .why-us .features .features-cart .icon-holder {
+    width: 32px;
+    height: 32px;
+  }
+  .why-us .features .features-cart h4 {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .why-us .features .features-cart p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
 /* end why us */
 /* start team */
 .team {
@@ -307,6 +419,25 @@
   width: 1200px;
   height: 500px;
   padding-top: 25px;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .team .heading h3 {
+    font-size: 30px;
+    line-height: 29px;
+  }
+  .team .heading p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .team img {
+    width: 95%;
+    height: 300px;
+  }
 }
 /* end team */
 /* start footer */
@@ -362,5 +493,26 @@ footer p {
   margin: 0;
   padding: 0;
   padding-top: 20px;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer img {
+    width: 133px;
+    height: 41px;
+  }
+  footer .pages ul {
+    width: 45%;
+  }
+  footer .pages ul li a {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  footer .icons-holder {
+    width: 30%;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 /* end footer */

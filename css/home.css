@@ -42,6 +42,9 @@
   width: 200px;
   height: 60px;
 }
+.landing .contanier nav .burger {
+  display: none;
+}
 .landing .contanier nav ul {
   display: flex;
   list-style: none;
@@ -49,6 +52,9 @@
   justify-content: space-evenly;
   flex-wrap: nowrap;
   flex-direction: row;
+}
+.landing .contanier nav ul i {
+  display: none;
 }
 .landing .contanier nav ul li a {
   text-decoration: none;
@@ -82,7 +88,7 @@
   left: 50%;
   transform: translate(-50%, -10%);
   text-align: center;
-  z-index: 100;
+  z-index: 1;
   color: white;
   width: 100%;
 }
@@ -120,8 +126,80 @@
 .landing .contanier .landing-contet button:hover > a {
   color: white;
 }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .landing {
+    position: relative;
+    height: 100vh;
+    background-position: center;
+  }
+  .landing .contanier nav {
+    padding-top: 25px;
+  }
+  .landing .contanier .landing-contet h3 {
+    font-size: 20px;
+    line-height: 16px;
+  }
+  .landing .contanier .landing-contet h1 {
+    font-size: 30px;
+    margin: 20px auto;
+    line-height: 35px;
+  }
+  .landing .contanier .landing-contet button {
+    padding: 15px 10px;
+  }
+  .landing .contanier nav ul.close {
+    position: absolute;
+    z-index: 1001;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    right: -372px;
+    top: 0;
+    transition: 0.3s ease-out;
+    border: 2px solid #ddd;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .landing .contanier nav ul.open {
+    position: absolute;
+    z-index: 1001;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    right: -19px;
+    top: 0;
+    transition: 0.3s ease-out;
+    border: 2px solid #ddd;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  #close {
+    font-size: 32px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+  .landing .contanier nav ul li {
+    color: #000;
+  }
+  .landing .contanier nav ul li a {
+    color: #161618;
+  }
+  .landing .contanier nav .burger {
+    display: block;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+  }
+}
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .landing {
     background-position: center;
   }
@@ -135,10 +213,6 @@
     padding: 15px 10px;
   }
 }
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* Your styles here */
-}
 /* end landing */
 /* start numbers */
 .number {
@@ -150,14 +224,11 @@
   align-items: center;
   justify-content: space-around;
   margin-bottom: 100px;
-  position: absolute;
   z-index: 100;
-  top: 120vh;
-  left: -29px;
+  top: 116vh;
   background-color: white;
   padding: 15px;
   border-radius: 20px;
-  transform: translate(105px, -30px);
   box-shadow: 0px 0px 20px 3px #00000030;
 }
 .number .num-card {
@@ -194,10 +265,32 @@
   margin: 0;
   padding: 10px 0;
 }
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
   .number {
-    transform: translate(70px, -15px);
+    width: 100%;
+    position: unset;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    box-shadow: none;
+    margin: 0;
+  }
+  .number .num-card {
+    position: unset;
+    text-align: center;
+  }
+  .number .num-card:not(:last-child)::before {
+    content: none;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .number {
+    transform: translateY(50%);
   }
   .number .num-card:not(:last-child)::before {
     right: -15px;
@@ -269,8 +362,38 @@
 .brief .brief-content button:hover > a {
   color: #20b43f;
 }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .brief {
+    padding-top: 75px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .brief .brief-content h3 {
+    transform: translateX(5%);
+    position: absolute;
+    top: 25px;
+    font-size: 19px;
+  }
+  .brief .image-holder {
+    width: 350px;
+    height: 350px;
+  }
+  .brief .brief-content {
+    padding: 0;
+  }
+  .brief .brief-content p {
+    text-align: start;
+  }
+  .brief .brief-content button {
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 15px;
+  }
+}
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .brief .image-holder {
     width: 300px;
     height: 320px;
@@ -353,8 +476,32 @@
   font-size: 12px;
   line-height: 15px;
 }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .why-us {
+    padding-top: 50px;
+  }
+  .why-us .heading {
+    padding-bottom: 15px;
+  }
+  .why-us .heading h2 {
+    font-size: 22px;
+    line-height: 26.86px;
+  }
+  .why-us .heading p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  .why-us .features {
+    flex-direction: column;
+  }
+  .why-us .features .features-cart {
+    width: 100%;
+    height: 160px;
+  }
+}
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .why-us {
     padding-top: 50px;
   }
@@ -368,7 +515,7 @@
   }
   .why-us .features .features-cart {
     width: 127px;
-    height: 147px;
+    height: 170px;
     padding: 10px;
   }
   .why-us .features .features-cart .icon-holder {
@@ -477,8 +624,47 @@
 .best-seller button:hover > a {
   color: #20b43f;
 }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .best-seller {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .best-seller .heading h2 {
+    font-size: 22px;
+    line-height: 26.86px;
+  }
+  .best-seller .heading p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+  #products-holder {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #products-holder .product-card .image-holder {
+    width: 100px;
+    height: 100px;
+  }
+  #products-holder .product-card .product-title {
+    font-size: 13px;
+    line-height: 12px;
+  }
+  #products-holder .product-card .size-holder .product-size {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .best-seller button {
+    padding: 12px 0px;
+  }
+  .best-seller button a {
+    font-size: 12px;
+  }
+}
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .best-seller {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -494,12 +680,8 @@
   #products-holder {
     padding-top: 50px;
     padding-bottom: 50px;
-    display: grid;
-    align-items: center;
-    justify-items: center;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
   }
   #products-holder .product-card .image-holder {
     width: 150px;
@@ -570,8 +752,28 @@
   text-align: center;
   margin-top: 15px;
 }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .process .contanier {
+    width: 70%;
+  }
+  .process h2 {
+    font-size: 20px;
+    line-height: 5px;
+  }
+  .process .cart-holder {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .process .process-cart p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .process .contanier {
     width: 70%;
   }
@@ -651,8 +853,30 @@
 .news-letter .news-box .news-content input:focus {
   outline: none;
 }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .news-letter {
+    padding-bottom: 25px;
+  }
+  .news-letter .news-box {
+    height: 190px;
+  }
+  .news-letter .news-box .news-content h3 {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .news-letter .news-box .news-content input {
+    padding: 10px 5px;
+    width: 190px;
+  }
+  .news-letter .news-box .news-content button {
+    padding: 10px 0px;
+    width: 120px;
+    font-size: 12px;
+  }
+}
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .news-letter {
     padding-bottom: 50px;
   }
@@ -723,6 +947,29 @@
   color: #4ba950;
   margin: 0;
   margin-top: 15px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .contact-us {
+    padding-bottom: 25px;
+  }
+  .contact-us h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .contact-us .contacts-contanier {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-us .contacts-contanier .contacts-box h4 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contact-us .contacts-contanier .contacts-box p {
+    font-size: 12px;
+    line-height: 24px;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -797,8 +1044,26 @@ footer p {
   padding: 0;
   padding-top: 20px;
 }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  footer .pages ul {
+    width: 85%;
+  }
+  footer .pages ul li a {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  footer .icons-holder {
+    width: 65%;
+    gap: 7.5px;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   footer img {
     width: 133px;
     height: 41px;
@@ -836,7 +1101,7 @@ footer p {
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1025px) and (max-width: 1199px) {
   /* Your styles here */
 }
 

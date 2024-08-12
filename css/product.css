@@ -126,9 +126,9 @@
     line-height: 14.65px;
   }
   .heading .contanier nav ul.close {
-    position: absolute;
+    position: fixed;
     z-index: 1001;
-    width: 111%;
+    width: 100%;
     height: 100vh;
     background-color: white;
     text-align: center;
@@ -140,18 +140,19 @@
     margin: 0;
   }
   .heading .contanier nav ul.open {
-    position: absolute;
+    position: fixed;
     z-index: 1001;
-    width: 111%;
+    width: 75%;
     height: 100vh;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    right: -19px;
+    right: 0;
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;
     padding: 0;
     margin: 0;
+    backdrop-filter: blur(10px);
   }
   #close {
     display: block;
@@ -162,7 +163,7 @@
     cursor: pointer;
   }
   .heading .contanier nav ul li a {
-    color: #4a4a4a;
+    color: #000000;
     font-size: 20px;
     font-weight: 700;
   }

@@ -186,15 +186,22 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 670px;
 }
-.heading-conact .conact .conacts-numbers i {
+.heading-conact .conact .conacts-numbers .conact-cart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+.heading-conact .conact .conacts-numbers .conact-cart i {
   color: #4ba950;
   text-align: start;
   font-size: 24px;
-  margin-right: -40px;
-  margin-bottom: 12px;
+  /* margin-right: -40px;
+  margin-bottom: 12px; */
 }
 .heading-conact .conact .conacts-numbers .numbers {
   display: flex;
@@ -215,6 +222,70 @@
   font-size: 12.22px;
   font-weight: 400;
   line-height: 19px;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading-conact .contanier nav ul {
+    justify-content: space-between;
+  }
+  .heading-conact {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .heading-conact .conact {
+    width: 90%;
+    height: 800px;
+  }
+  .heading-conact .conact::before {
+    width: 25%;
+  }
+  .heading-conact .conact .conact-holder {
+    padding: 25px;
+    gap: 20px;
+  }
+  .heading-conact .conact .conact-holder .conact-info {
+    width: 420px;
+    padding-top: 60px;
+  }
+  .heading-conact .conact .conact-holder .conact-info .heading-text h3 {
+    font-size: 24px;
+    line-height: 29.3px;
+  }
+  .heading-conact .conact .conact-holder .conact-info .heading-text p {
+    font-size: 14px;
+    line-height: 17.09px;
+  }
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder {
+    width: 100%;
+  }
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder input,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder textarea,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder button {
+    width: 100%;
+  }
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder label {
+    font-size: 14px;
+    line-height: 17.09px;
+  }
+  .heading-conact .conact .conact-holder .map iframe {
+    width: 100%;
+    border-radius: 30px;
+  }
+  .heading-conact .conact .conacts-numbers {
+    width: 65%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  .heading-conact .conact .conacts-numbers .conact-cart {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 190px;
+  }
 }
 /* end heading */
 /* start footer */
@@ -270,5 +341,25 @@ footer p {
   margin: 0;
   padding: 0;
   padding-top: 20px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer img {
+    width: 133px;
+    height: 41px;
+  }
+  footer .pages ul {
+    width: 45%;
+  }
+  footer .pages ul li a {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  footer .icons-holder {
+    width: 30%;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 /* end footer */

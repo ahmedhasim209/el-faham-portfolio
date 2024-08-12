@@ -156,7 +156,7 @@
     height: 100vh;
     background-color: white;
     text-align: center;
-    right: -450px;
+    right: -100%;
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;
@@ -203,6 +203,9 @@
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1024px) {
+  .landing .contanier nav ul {
+    justify-content: space-between;
+  }
   .landing {
     background-position: center;
   }

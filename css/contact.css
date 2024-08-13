@@ -81,7 +81,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 100;
+  z-index: 1;
   background-color: white;
   width: 1100px;
   height: 750px;
@@ -223,6 +223,129 @@
   font-weight: 400;
   line-height: 19px;
 }
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .heading-conact {
+    position: relative;
+    height: 200vh;
+    background-position: center;
+    overflow: hidden;
+  }
+  .heading-conact .contanier nav {
+    padding-top: 25px;
+  }
+  .heading-conact .contanier nav ul.close {
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    right: -100%;
+    top: 0;
+    transition: 0.5s ease-out;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .heading-conact .contanier nav ul.open {
+    position: fixed;
+    z-index: 1001;
+    width: 75%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    right: 0;
+    top: 0;
+    transition: 0.5s ease-out;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(10px);
+  }
+  #close {
+    display: block;
+    font-size: 32px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+  .heading-conact .contanier nav ul li a {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .heading-conact .contanier nav ul li a:hover {
+    color: #4a4a4a;
+  }
+  .heading-conact .contanier nav .burger {
+    display: block;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  .heading-conact .conact {
+    width: 350px;
+    height: 165vh;
+  }
+  .heading-conact .conact::before {
+    content: none;
+    width: 400px;
+  }
+  .heading-conact .conact .conact-holder {
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 25px;
+    gap: 50px;
+    height: 140vh;
+  }
+  .heading-conact .conact .conact-holder .conact-info,
+  .heading-conact .conact .conact-holder .conact-info .heading-text,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder input,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder textarea,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder button {
+    width: 100%;
+  }
+  .heading-conact .conact .conact-holder .conact-info .heading-text h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .heading-conact .conact .conact-holder .conact-info .heading-text p,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder label,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder input {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .heading-conact .conact .conact-holder .map {
+    width: 350px;
+    margin: 0 auto;
+    padding: 0;
+    height: 560px;
+  }
+  .heading-conact .conact .conact-holder .map iframe {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+  }
+  .heading-conact .conact .conacts-numbers {
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .heading-conact .conact .conacts-numbers .conact-cart {
+    gap: 15px;
+  }
+  .heading-conact .conact .conacts-numbers .conact-cart .numbers {
+    gap: 5px;
+  }
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .heading-conact .contanier nav ul {
@@ -341,6 +464,24 @@ footer p {
   margin: 0;
   padding: 0;
   padding-top: 20px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  footer .pages ul {
+    width: 85%;
+  }
+  footer .pages ul li a {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  footer .icons-holder {
+    width: 65%;
+    gap: 7.5px;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   footer img {

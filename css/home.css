@@ -53,8 +53,11 @@
   flex-wrap: nowrap;
   flex-direction: row;
 }
-.landing .contanier nav ul i {
+.landing .contanier nav ul #close {
   display: none;
+}
+.landing .contanier nav ul li {
+  margin: auto 0;
 }
 .landing .contanier nav ul li a {
   text-decoration: none;
@@ -62,6 +65,12 @@
 }
 .landing .contanier nav ul li a:hover {
   color: #20b43f;
+}
+.landing .contanier nav ul .language ul {
+  padding: 0;
+  gap: 10px;
+  color: white;
+  margin: auto 0;
 }
 /* end nav */
 .landing {

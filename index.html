@@ -37,20 +37,40 @@
             </div>
             <ul id="links" class="close">
               <i id="close" class="fa-regular fa-circle-xmark"></i>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="pages/products.html">Products</a></li>
-              <li><a href="pages/about.html">About US</a></li>
-              <li><a href="pages/contact.html">Contact US</a></li>
+              <li><a href="index.html" data-i18n="home_link"></a></li>
+              <li>
+                <a href="pages/products.html" data-i18n="products_link"
+                  >Products</a
+                >
+              </li>
+              <li><a href="pages/about.html" data-i18n="about_link"></a></li>
+              <li>
+                <a href="pages/contact.html" data-i18n="contact_link"
+                  ></a
+                >
+              </li>
+              <li class="language">
+                <ul>
+                  <li>
+                    <a href="index.html" onclick="changeLanguage('en')"
+                      >English</a
+                    >
+                  </li>
+                  <li>
+                    <a href="index.html" onclick="changeLanguage('ar')">عربي</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </nav>
           <!-- end nav -->
           <div class="landing-contet">
-            <h3>ElFahham Company</h3>
-            <h1>
-              Seeding Growth,<br />
-              Harvesting <span>Opportunities</span>
-            </h1>
-            <button><a href="pages/contact.html">Contact US</a></button>
+            <h3 data-i18n="welcome_message"></h3>
+            <h1 data-i18n="slogan"></h1>
+            <h1 data-i18n="word"></h1>
+            <button>
+              <a data-i18n="contact_button" href="pages/contact.html"></a>
+            </button>
           </div>
         </div>
       </section>

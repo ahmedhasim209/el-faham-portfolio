@@ -150,43 +150,43 @@ function incrementNumber(el) {
   const products = [
     {
       image: "images/best seller images/white-kidney-beans.webp",
-      altImg: "White-kidney-beans",
-      size: "size",
+      altImg: "home-White-kidney-beans",
+      size: "home-size",
     },
     {
       image: "images/best seller images/whole-broad-beans.webp",
-      altImg: "whole-broad-beans",
-      size: "size",
+      altImg: "home-whole-broad-beans",
+      size: "home-size",
     },
     {
       image: "images/best seller images/golden-sesame-seeds.webp",
-      altImg: "golden-sesame-seeds",
-      size: "size",
+      altImg: "home-golden-sesame-seeds",
+      size: "home-size",
     },
     {
       image: "images/best seller images/split-red-lentils.webp",
-      altImg: "split-red-lentils",
-      size: "size",
+      altImg: "home-split-red-lentils",
+      size: "home-size",
     },
     {
       image: "images/best seller images/cumin-seeds.webp",
-      altImg: "cumin-seeds",
-      size: "size",
+      altImg: "home-cumin-seeds",
+      size: "home-size",
     },
     {
       image: "images/best seller images/black-pepper.webp",
-      altImg: "black-pepper",
-      size: "size",
+      altImg: "home-black-pepper",
+      size: "home-size",
     },
     {
       image: "images/best seller images/carawy-seeds.webp",
-      altImg: "carawy-seeds",
-      size: "size",
+      altImg: "home-carawy-seeds",
+      size: "home-size",
     },
     {
       image: "images/best seller images/peanuts.webp",
-      altImg: "peanuts",
-      size: "size",
+      altImg: "home-peanuts",
+      size: "home-size",
     },
   ];
 

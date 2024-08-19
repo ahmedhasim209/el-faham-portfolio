@@ -28,42 +28,42 @@ document.addEventListener("click", (e) => {
 const numbers = [
   {
     number: 0,
-    title: "Production Lines",
+    title: "lines",
     value: 7,
     image: "images/Production-Lines.webp",
     altImage: "production-lines",
   },
   {
     number: 0,
-    title: "Tones daily Production",
+    title: "capacity",
     value: 500,
     image: "images/Tones-daily-Production.webp",
     altImage: "tones-daily-production",
   },
   {
     number: 0,
-    title: "Countries",
+    title: "countries",
     value: 65,
     image: "images/Countries.webp",
     altImage: "countries",
   },
   {
     number: 0,
-    title: "Tons Storage Space",
+    title: "storage",
     value: 20000,
     image: "images/Tons-Storage-Space.webp",
     altImage: "tons-storage-space",
   },
   {
     number: 0,
-    title: "Years of Experience",
+    title: "experience",
     value: 50,
     image: "images/Years-of-Experience.webp",
     altImage: "years-of-experience",
   },
   {
     number: 0,
-    title: "Satisfied Clients",
+    title: "clients",
     value: 1000,
     image: "images/Satisfied-Clients.webp",
     altImage: "satisfied-clients",
@@ -93,6 +93,7 @@ const viewNumbers = () => {
     numberImage.alt = numbers[i].altImage;
     number.innerHTML = numbers[i].number;
     number.setAttribute("data-goal", numbers[i].value);
+    title.setAttribute("data-i18n", numbers[i].title);
     title.innerHTML = numbers[i].title;
   }
 };
@@ -149,51 +150,43 @@ function incrementNumber(el) {
   const products = [
     {
       image: "images/best seller images/white-kidney-beans.webp",
-      title: "White kidney beans",
       altImg: "White-kidney-beans",
-      size: "Bag:Weight upon request",
+      size: "size",
     },
     {
       image: "images/best seller images/whole-broad-beans.webp",
-      title: "Whole broad beans",
       altImg: "whole-broad-beans",
-      size: "Bag:Weight upon request",
+      size: "size",
     },
     {
       image: "images/best seller images/golden-sesame-seeds.webp",
-      title: "Golden Sesame Seeds",
       altImg: "golden-sesame-seeds",
-      size: "Bag:Weight upon request",
+      size: "size",
     },
     {
       image: "images/best seller images/split-red-lentils.webp",
-      title: "Split red lentils",
       altImg: "split-red-lentils",
-      size: "Bag:Weight upon request",
+      size: "size",
     },
     {
       image: "images/best seller images/cumin-seeds.webp",
-      title: "Cumin seeds",
       altImg: "cumin-seeds",
-      size: "Bag:Weight upon request",
+      size: "size",
     },
     {
       image: "images/best seller images/black-pepper.webp",
-      title: "Black pepper",
       altImg: "black-pepper",
-      size: "Bag:Weight upon request",
+      size: "size",
     },
     {
       image: "images/best seller images/carawy-seeds.webp",
-      title: "Carawy seeds",
       altImg: "carawy-seeds",
-      size: "Bag:Weight upon request",
+      size: "size",
     },
     {
       image: "images/best seller images/peanuts.webp",
-      title: "Peanuts",
       altImg: "peanuts",
-      size: "Bag:Weight upon request",
+      size: "size",
     },
   ];
 
@@ -224,8 +217,8 @@ function incrementNumber(el) {
       sizeHolder.appendChild(prodSize);
       prodImage.src = products[i].image;
       prodImage.alt = products[i].altImg;
-      prodTitle.innerHTML = products[i].title;
-      prodSize.innerHTML = products[i].size;
+      prodTitle.setAttribute("data-i18n", products[i].altImg);
+      prodSize.setAttribute("data-i18n", products[i].size);
       prodSize.parentNode.insertBefore(prodBag, prodSize);
     }
   };

@@ -82,26 +82,30 @@
           <div class="categories-box">
             <p
               class="active kind"
-              onclick="filterProducts('all'); changeBackground(this);"
+              value="all"
+              onclick="filterProductsByCategory('all'); changeBackground(this);"
               data-i18n="all-products-link"
             ></p>
             <p
               class="kind"
-              onclick="filterProducts('pulses'); changeBackground(this);"
+              value="pulses"
+              onclick="filterProductsByCategory('pulses'); changeBackground(this);"
               data-i18n="pulses-products-link"
             >
               Pulses and Grains
             </p>
             <p
               class="kind"
-              onclick="filterProducts('herbs'); changeBackground(this);"
+              value="herbs"
+              onclick="filterProductsByCategory('herbs'); changeBackground(this);"
               data-i18n="herbs-products-link"
             >
               Herbs and Spices
             </p>
             <p
               class="kind"
-              onclick="filterProducts('nuts'); changeBackground(this);"
+              value="nuts"
+              onclick="filterProductsByCategory('nuts'); changeBackground(this);"
               data-i18n="nuts-products-link"
             >
               Nuts
@@ -125,10 +129,17 @@
           /></a>
           <div class="pages">
             <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="products.html">Products</a></li>
-              <li><a href="about.html">About US</a></li>
-              <li><a href="contact.html">Contact US</a></li>
+              <i id="close" class="fa-regular fa-circle-xmark"></i>
+              <li>
+                <a href="../index.html" data-i18n="home-link"></a>
+              </li>
+              <li>
+                <a href="products.html" data-i18n="products-link">Products</a>
+              </li>
+              <li><a href="about.html" data-i18n="about-link">About US</a></li>
+              <li>
+                <a href="contact.html" data-i18n="contact-link">Contact US</a>
+              </li>
             </ul>
           </div>
           <div class="icons-holder">
@@ -139,7 +150,7 @@
             <i class="fa-brands fa-linkedin-in"></i>
           </div>
           <hr />
-          <p>© 2024 El Fahham | All rights reserved</p>
+          <p data-i18n="copy-right">© 2024 El Fahham | All rights reserved</p>
         </div>
       </footer>
       <!-- end footer -->

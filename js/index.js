@@ -76,25 +76,24 @@ const viewNumbers = () => {
   for (let i = 0; i < numbers.length; i++) {
     const numberCard = document.createElement("div");
     numberCard.classList.add("num-card");
+    numbersContainer.appendChild(numberCard);
     const imagesHolder = document.createElement("div");
     imagesHolder.classList.add("images-holder");
-    numbersContainer.appendChild(numberCard);
+    numberCard.appendChild(imagesHolder);
     const numberImage = document.createElement("img");
     numberImage.classList.add("number-image");
-    const number = document.createElement("span");
-    number.classList.add("nums");
-    const title = document.createElement("h3");
-    title.classList.add("title");
-    numberCard.appendChild(imagesHolder);
-    imagesHolder.appendChild(numberImage);
-    numberCard.appendChild(number);
-    numberCard.appendChild(title);
     numberImage.src = numbers[i].image;
     numberImage.alt = numbers[i].altImage;
+    imagesHolder.appendChild(numberImage);
+    const number = document.createElement("span");
+    number.classList.add("nums");
+    numberCard.appendChild(number);
     number.innerHTML = numbers[i].number;
     number.setAttribute("data-goal", numbers[i].value);
+    const title = document.createElement("h3");
+    title.classList.add("title");
+    numberCard.appendChild(title);
     title.setAttribute("data-i18n", numbers[i].title);
-    title.innerHTML = numbers[i].title;
   }
 };
 viewNumbers();
@@ -110,9 +109,6 @@ window.onscroll = () => {
 
   //numbers offSet top
   let numberSectionOffsetTop = numberSection.offsetTop;
-
-  // products offSet Top
-  // let productsOffSetTop = productsHome.offsetTop;
 
   // window scroll top
   let windowScrollTop = this.pageYOffset;
@@ -146,176 +142,79 @@ function incrementNumber(el) {
     }, 50);
     incrementIntervals.push(startCount);
   });
-
-  const products = [
-    {
-      image: "images/best seller images/white-kidney-beans.webp",
-      altImg: "home-White-kidney-beans",
-      size: "home-size",
-    },
-    {
-      image: "images/best seller images/whole-broad-beans.webp",
-      altImg: "home-whole-broad-beans",
-      size: "home-size",
-    },
-    {
-      image: "images/best seller images/golden-sesame-seeds.webp",
-      altImg: "home-golden-sesame-seeds",
-      size: "home-size",
-    },
-    {
-      image: "images/best seller images/split-red-lentils.webp",
-      altImg: "home-split-red-lentils",
-      size: "home-size",
-    },
-    {
-      image: "images/best seller images/cumin-seeds.webp",
-      altImg: "home-cumin-seeds",
-      size: "home-size",
-    },
-    {
-      image: "images/best seller images/black-pepper.webp",
-      altImg: "home-black-pepper",
-      size: "home-size",
-    },
-    {
-      image: "images/best seller images/carawy-seeds.webp",
-      altImg: "home-carawy-seeds",
-      size: "home-size",
-    },
-    {
-      image: "images/best seller images/peanuts.webp",
-      altImg: "home-peanuts",
-      size: "home-size",
-    },
-  ];
-
-  const productsHolder = document.getElementById("products-holder");
-
-  const viewProducts = () => {
-    for (let i = 0; i < products.length; i++) {
-      const product = document.createElement("div");
-      product.classList.add("product-card");
-      productsHolder.appendChild(product);
-      const prodImageHolder = document.createElement("div");
-      prodImageHolder.classList.add("image-holder");
-      const prodImage = document.createElement("img");
-      prodImage.classList.add("product-img");
-      const prodTitle = document.createElement("p");
-      prodTitle.classList.add("product-title");
-      const prodSize = document.createElement("p");
-      prodSize.classList.add("product-size");
-      const prodBag = document.createElement("i");
-      prodBag.classList.add("fa-solid");
-      prodBag.classList.add("fa-bag-shopping");
-      const sizeHolder = document.createElement("div");
-      sizeHolder.classList.add("size-holder");
-      product.appendChild(prodImageHolder);
-      prodImageHolder.appendChild(prodImage);
-      product.appendChild(prodTitle);
-      product.appendChild(sizeHolder);
-      sizeHolder.appendChild(prodSize);
-      prodImage.src = products[i].image;
-      prodImage.alt = products[i].altImg;
-      prodTitle.setAttribute("data-i18n", products[i].altImg);
-      prodSize.setAttribute("data-i18n", products[i].size);
-      prodSize.parentNode.insertBefore(prodBag, prodSize);
-    }
-  };
-  viewProducts();
-
-  // if (
-  //   document.body.scrollTop > goalOffsetTop - pageHeight ||
-  //   document.documentElement.scrollTop > goalOffsetTop - pageHeight
-  // ) {
-  //   // select cards
-  //   let allCard = document.querySelectorAll(".goal #carts-holder .card");
-  //   allCard.forEach((card) => {
-  //     card.style.opacity = "100%";
-  //     card.style.animation = "slideIn 2s";
-  //   });
-  // }
-
-  // if (windowScrollTop > productsOffSetTop) {
-  //   let allCard = document.querySelectorAll("#products-holder .product-card");
-  //   allCard.forEach((card) => {
-  //     card.style.opacity = "100%";
-  //     card.style.animation = "slideUp 2s";
-  //   });
-  // }
 }
+const products = [
+  {
+    image: "images/best seller images/white-kidney-beans.webp",
+    altImg: "home-White-kidney-beans",
+    size: "home-size",
+  },
+  {
+    image: "images/best seller images/whole-broad-beans.webp",
+    altImg: "home-whole-broad-beans",
+    size: "home-size",
+  },
+  {
+    image: "images/best seller images/golden-sesame-seeds.webp",
+    altImg: "home-golden-sesame-seeds",
+    size: "home-size",
+  },
+  {
+    image: "images/best seller images/split-red-lentils.webp",
+    altImg: "home-split-red-lentils",
+    size: "home-size",
+  },
+  {
+    image: "images/best seller images/cumin-seeds.webp",
+    altImg: "home-cumin-seeds",
+    size: "home-size",
+  },
+  {
+    image: "images/best seller images/black-pepper.webp",
+    altImg: "home-black-pepper",
+    size: "home-size",
+  },
+  {
+    image: "images/best seller images/carawy-seeds.webp",
+    altImg: "home-carawy-seeds",
+    size: "home-size",
+  },
+  {
+    image: "images/best seller images/peanuts.webp",
+    altImg: "home-peanuts",
+    size: "home-size",
+  },
+];
 
-// const goals = [
-//   {
-//     imageBlack: "images/Manufacturer-black.webp",
-//     imageWhite: "images/Manufacturer-white.webp",
-//     title: "Manufacturer",
-//     description: "we are manufacturer ,our factory in egypt",
-//     altImg: "factory",
-//   },
-//   {
-//     imageBlack: "images/High-Quality-black.webp",
-//     imageWhite: "images/High-Quality-white.webp",
-//     title: "High Quality",
-//     description: "our commitment to high quality is unwavering",
-//     altImg: "Quality",
-//   },
-//   {
-//     imageBlack: "images/Good-Price-black.webp",
-//     imageWhite: "images/Good-Price-white.webp",
-//     title: "Good Price",
-//     description: "the most competitive price",
-//     altImg: "dollar-sign",
-//   },
-//   {
-//     imageBlack: "images/24-hours-black.webp",
-//     imageWhite: "images/24-hours-white.webp",
-//     title: "Support",
-//     description: "24h support with professionals",
-//     altImg: "24-hours",
-//   },
-// ];
-
-// const cardsContainer = document.getElementById("carts-holder");
-
-// const viewGoals = () => {
-//   for (let i = 0; i < goals.length; i++) {
-//     const card = document.createElement("div");
-//     card.classList.add("card");
-//     cardsContainer.appendChild(card);
-//     const imageBlack = document.createElement("img");
-//     imageBlack.classList.add("card-img-black");
-//     const imageWhite = document.createElement("img");
-//     imageWhite.classList.add("card-img-white");
-//     const title = document.createElement("h3");
-//     title.classList.add("card-title");
-//     const dis = document.createElement("p");
-//     dis.classList.add("card-dis");
-//     card.appendChild(imageBlack);
-//     card.appendChild(imageWhite);
-//     card.appendChild(title);
-//     card.appendChild(dis);
-//     imageBlack.src = goals[i].imageBlack;
-//     imageBlack.alt = goals[i].altImg;
-//     imageWhite.src = goals[i].imageWhite;
-//     imageWhite.alt = goals[i].altImg;
-//     title.innerHTML = goals[i].title;
-//     dis.innerHTML = goals[i].description;
-//   }
-// };
-// viewGoals();
-
-// let starIcon = "\u2605";
-
-//
-
-// const currentYear = new Date().getFullYear();
-// const spanYear = document.getElementById("year");
-// spanYear.innerHTML = currentYear;
-
-// // select products section
-// const productsHome = document.querySelector(".products-home");
-// console.log(productsHome);
-
-// // select goal section
-// const goal = document.querySelector(".goal");
+const productsHolder = document.querySelector("#products-holder");
+const viewProducts = () => {
+  for (let i = 0; i < products.length; i++) {
+    const product = document.createElement("div");
+    product.classList.add("product-card");
+    productsHolder.appendChild(product);
+    const prodImageHolder = document.createElement("div");
+    prodImageHolder.classList.add("image-holder");
+    product.appendChild(prodImageHolder);
+    const prodImage = document.createElement("img");
+    prodImage.classList.add("product-img");
+    prodImage.src = products[i].image;
+    prodImage.alt = products[i].altImg;
+    prodImageHolder.appendChild(prodImage);
+    const prodTitle = document.createElement("p");
+    prodTitle.classList.add("product-title");
+    product.appendChild(prodTitle);
+    prodTitle.setAttribute("data-i18n", products[i].altImg);
+    const sizeHolder = document.createElement("div");
+    sizeHolder.classList.add("size-holder");
+    product.appendChild(sizeHolder);
+    const prodSize = document.createElement("p");
+    prodSize.classList.add("product-size");
+    sizeHolder.appendChild(prodSize);
+    prodSize.setAttribute("data-i18n", products[i].size);
+    const prodBag = document.createElement("i");
+    prodBag.classList.add("fa-solid");
+    prodBag.classList.add("fa-bag-shopping");
+    prodSize.parentNode.insertBefore(prodBag, prodSize);
+  }
+};
+viewProducts();

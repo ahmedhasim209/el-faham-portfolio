@@ -364,83 +364,68 @@ const mainProducts = [
   },
 ];
 
-const productSection = document.querySelector(".products");
+const productHolder = document.getElementById("product-holder");
 
-function filterProducts(category) {
-  const productHolder = document.getElementById("product-holder");
-  productHolder.innerHTML = "";
-  if (category === "all") {
-    mainProducts.forEach((el) => {
-      const productCard = document.createElement("div");
-      productCard.classList.add("product-card");
-      productHolder.appendChild(productCard);
-      const prodImageHolder = document.createElement("div");
-      prodImageHolder.classList.add("image-holder");
-      const prodImage = document.createElement("img");
-      prodImage.classList.add("product-img");
-      const prodTitle = document.createElement("p");
-      prodTitle.classList.add("product-title");
-      const prodSize = document.createElement("p");
-      prodSize.classList.add("product-size");
-      const prodBag = document.createElement("i");
-      prodBag.classList.add("fa-solid");
-      prodBag.classList.add("fa-bag-shopping");
-      const sizeHolder = document.createElement("div");
-      sizeHolder.classList.add("size-holder");
-      productCard.appendChild(prodImageHolder);
-      prodImageHolder.appendChild(prodImage);
-      productCard.appendChild(prodTitle);
-      productCard.appendChild(sizeHolder);
-      sizeHolder.appendChild(prodSize);
-      prodImage.src = el.image;
-      prodImage.alt = el.altImg;
-      prodTitle.setAttribute("data-i18n", el.altImg);
-      prodSize.setAttribute("data-i18n", el.size);
-      prodSize.parentNode.insertBefore(prodBag, prodSize);
-    });
-  } else {
-    const filteredProducts = mainProducts.filter(
-      (product) => product.category === category
-    );
-    filteredProducts.forEach((el) => {
-      const productCard = document.createElement("div");
-      productCard.classList.add("product-card");
-      productHolder.appendChild(productCard);
-      const prodImageHolder = document.createElement("div");
-      prodImageHolder.classList.add("image-holder");
-      const prodImage = document.createElement("img");
-      prodImage.classList.add("product-img");
-      const prodTitle = document.createElement("p");
-      prodTitle.classList.add("product-title");
-      const prodSize = document.createElement("p");
-      prodSize.classList.add("product-size");
-      const prodBag = document.createElement("i");
-      prodBag.classList.add("fa-solid");
-      prodBag.classList.add("fa-bag-shopping");
-      const sizeHolder = document.createElement("div");
-      sizeHolder.classList.add("size-holder");
-      productCard.appendChild(prodImageHolder);
-      prodImageHolder.appendChild(prodImage);
-      productCard.appendChild(prodTitle);
-      productCard.appendChild(sizeHolder);
-      sizeHolder.appendChild(prodSize);
-      prodImage.src = el.image;
-      prodImage.alt = el.altImg;
-      prodTitle.setAttribute("data-i18n", el.altImg);
-      prodSize.setAttribute("data-i18n", el.size);
-      prodSize.parentNode.insertBefore(prodBag, prodSize);
-      prodSize.parentNode.insertBefore(prodBag, prodSize);
-    });
-  }
+function viewProducts() {
+  mainProducts.forEach((el) => {
+    const productCard = document.createElement("div");
+    productCard.classList.add("product-card");
+    productHolder.appendChild(productCard);
+    productCard.setAttribute("data-category", el.category);
+    const prodImageHolder = document.createElement("div");
+    prodImageHolder.classList.add("image-holder");
+    const prodImage = document.createElement("img");
+    prodImage.classList.add("product-img");
+    const prodTitle = document.createElement("p");
+    prodTitle.classList.add("product-title");
+    const prodSize = document.createElement("p");
+    prodSize.classList.add("product-size");
+    const prodBag = document.createElement("i");
+    prodBag.classList.add("fa-solid");
+    prodBag.classList.add("fa-bag-shopping");
+    const sizeHolder = document.createElement("div");
+    sizeHolder.classList.add("size-holder");
+    productCard.appendChild(prodImageHolder);
+    prodImageHolder.appendChild(prodImage);
+    productCard.appendChild(prodTitle);
+    productCard.appendChild(sizeHolder);
+    sizeHolder.appendChild(prodSize);
+    prodImage.src = el.image;
+    prodImage.alt = el.altImg;
+    prodTitle.setAttribute("data-i18n", el.altImg);
+    prodSize.setAttribute("data-i18n", el.size);
+    prodSize.parentNode.insertBefore(prodBag, prodSize);
+  });
 }
-filterProducts("all");
+viewProducts();
+
+function filterProductsByCategory(category) {
+  const products = document.querySelectorAll("#product-holder .product-card");
+
+  products.forEach((product) => {
+    // Get the category of the current product
+    const productCategory = product.getAttribute("data-category");
+
+    // Show or hide the product based on the selected category
+    if (category === "all" || productCategory === category) {
+      product.style.display = "block";
+    } else {
+      product.style.display = "none";
+    }
+  });
+}
+
+document
+  .querySelector(".categories-box")
+  .addEventListener("change", function (event) {
+    const selectedCategory = event.target.value;
+    filterProductsByCategory(selectedCategory);
+  });
 
 function changeBackground(clickedElement) {
   const currentActive = document.querySelector(".active");
-
   if (currentActive) {
     currentActive.classList.remove("active");
   }
-
   clickedElement.classList.add("active");
 }

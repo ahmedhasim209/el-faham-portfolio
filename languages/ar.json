@@ -40,7 +40,7 @@
     "home-black-pepper" : "فلفل اسود",
     "home-carawy-seeds" : "كراوية",
     "home-peanuts" : "سوداني",
-    "size" : "الوزن حسب الطلب",
+    "home-size" : "الوزن حسب الطلب",
     "home-products_button" : "جميع المنتجات",
     "process" : "النموذج التجاري الشامل ومراحل الإنتاج",
     "harvesting" : "١- الحصاد",
@@ -117,5 +117,6 @@
     "pistachio green skin" : "53",
     "cashew kernels" : "54",
     "pistachio-green-skin" : "55",
-    "cashew-kernels" : "56"
+    "cashew-kernels" : "56",
+    "size" : "الوزن حسب الطلب"
 }

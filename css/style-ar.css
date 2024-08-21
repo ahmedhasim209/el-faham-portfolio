@@ -65,6 +65,7 @@ html {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    
   }
   .landing .contanier nav ul.open {
     position: fixed;

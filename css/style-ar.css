@@ -15,11 +15,17 @@ html {
 .number .num-card:not(:last-child)::before {
   transform: translateX(-80px);
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .number .num-card:not(:last-child)::before {
+    transform: translateX(-53px);
+  }
+}
 .brief .brief-content {
   padding-top: 20px;
   padding-right: 25px;
   width: 700px;
 }
+
 .why-us .heading h2 {
   margin-bottom: 10px;
 }
@@ -43,4 +49,56 @@ html {
 }
 .heading-conact .conact::before {
   right: 65%;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .landing .contanier nav ul.close {
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    transform: translateX(-380px);
+    top: 0;
+    transition: 0.5s ease-out;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .landing .contanier nav ul.open {
+    position: fixed;
+    z-index: 1001;
+    width: 75%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    transform: translateX(-80px);
+
+    top: 0;
+    transition: 0.5s ease-out;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(10px);
+  }
+  .brief .brief-content h3 {
+    transform: translateX(-18%);
+    position: absolute;
+    top: 25px;
+    font-size: 19px;
+  }
+  .brief .brief-content {
+    width: 100%;
+  }
+  .brief .brief-content p {
+    max-width: 100%;
+  }
+  .process h2 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .news-letter .news-box .news-content .contact-section input {
+    width: 225px;
+  }
 }

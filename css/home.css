@@ -110,7 +110,8 @@
 }
 .landing .contanier .landing-contet h1 {
   font-size: 60px;
-  margin: 25px auto;
+  margin: 20px auto;
+  margin-bottom: 0;
   line-height: 1.3;
 }
 .landing .contanier .landing-contet .sentence {
@@ -121,7 +122,7 @@
   gap: 15px;
 }
 .landing .contanier .landing-contet .sentence h1 {
-  margin: 25px 0;
+  margin: 20px 0;
 }
 .landing .contanier .landing-contet .sentence .span {
   color: #4ba950;
@@ -164,8 +165,12 @@
   }
   .landing .contanier .landing-contet h1 {
     font-size: 30px;
-    margin: 20px auto;
+    margin: 10px auto;
     line-height: 35px;
+  }
+  .landing .contanier .landing-contet .sentence h1 {
+    margin: 25px 0;
+    margin-top: 0;
   }
   .landing .contanier .landing-contet button {
     padding: 15px 10px;
@@ -177,7 +182,7 @@
     height: 100vh;
     background-color: white;
     text-align: center;
-    right: -100%;
+    transform: translateX(380px);
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;
@@ -191,7 +196,7 @@
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    right: 0;
+    transform: translateX(80px);
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;
@@ -320,7 +325,7 @@
     transform: translateY(50%);
   }
   .number .num-card:not(:last-child)::before {
-    right: -15px;
+    transform: translateX(53px);
   }
   .number .num-card .images-holder {
     width: 50px;
@@ -414,9 +419,12 @@
   }
   .brief .brief-content {
     padding: 0;
+    width: 100%;
+    padding-top: 25px;
   }
   .brief .brief-content p {
     text-align: start;
+    max-width: 100%;
   }
   .brief .brief-content button {
     margin: 0 auto;
@@ -905,9 +913,9 @@
     font-size: 17px;
     line-height: 21px;
   }
-  .news-letter .news-box .news-content input {
+  .news-letter .news-box .news-content .contact-section input {
     padding: 10px 5px;
-    width: 190px;
+    width: 225px;
   }
   .news-letter .news-box .news-content button {
     padding: 10px 0px;
@@ -928,8 +936,9 @@
     font-size: 24px;
     line-height: 29px;
   }
-  .news-letter .news-box .news-content input {
+  .news-letter .news-box .news-content .contact-section input {
     padding: 12px 15px;
+    width: 225px;
   }
   .news-letter .news-box .news-content button {
     padding: 12px 25px;

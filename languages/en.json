@@ -138,5 +138,13 @@
     "goal" : "Our goal",
     "goal-p" : "To become a global leader in the field of importing, exporting, processing and packaging agricultural crops, and to be the first choice for customers looking for quality, trust and excellence.",
     "team-heading" : "Our team",
-    "team-p" : "A professional work team is the key to success. We have a work team characterized by dedication to work, professionalism, strong will, and a cooperative atmosphere, so it is the secret of our success."
+    "team-p" : "A professional work team is the key to success. We have a work team characterized by dedication to work, professionalism, strong will, and a cooperative atmosphere, so it is the secret of our success.",
+    "conact-heading" : "Get in Touch",
+    "conact-heading-p" : "24h customer services",
+    "name" : "Name",
+    "email" : "Email",
+    "number" : "Phone Number",
+    "message" : "Message",
+    "conatc-button" : "Send",
+    "address-conact" : ""
 }

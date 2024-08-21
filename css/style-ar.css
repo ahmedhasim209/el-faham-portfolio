@@ -1,4 +1,6 @@
 html {
-    direction: rtl;
+  direction: rtl;
 }
-
+.heading-conact .conact::before {
+  right: 65%;
+}

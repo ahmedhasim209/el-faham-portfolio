@@ -4,6 +4,12 @@ function updateContent(langData) {
     const key = element.getAttribute("data-i18n");
     element.textContent = langData[key];
   });
+
+  // Update placeholders
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((input) => {
+    const key = input.getAttribute("data-i18n-placeholder");
+    input.setAttribute("placeholder", langData[key] || key); // Fallback to key if translation is missing
+  });
 }
 // Function to set the language preference
 function setLanguagePreference(lang) {

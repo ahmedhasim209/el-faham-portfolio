@@ -1,6 +1,46 @@
 html {
   direction: rtl;
 }
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica/alfont_com_هلفيتيكا-عربي-.ttf")
+    format("truetype");
+  font-weight: 1 1000;
+  font-style: oblique 0deg 10deg;
+  font-display: swap;
+}
+* {
+  font-family: "Helvetica", sans-serif;
+}
+.number .num-card:not(:last-child)::before {
+  transform: translateX(-80px);
+}
+.brief .brief-content {
+  padding-top: 20px;
+  padding-right: 25px;
+  width: 700px;
+}
+.why-us .heading h2 {
+  margin-bottom: 10px;
+}
+.why-us .features .features-cart h4,
+.why-us .features .features-cart p {
+  text-align: right;
+}
+.news-letter .news-box .news-content .contact-section input {
+  width: 270px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.news-letter .news-box .news-content .contact-section button {
+  width: 90px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 .heading-conact .conact::before {
   right: 65%;
 }

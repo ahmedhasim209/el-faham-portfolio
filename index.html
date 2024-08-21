@@ -65,7 +65,10 @@
           <div class="landing-contet">
             <h3 data-i18n="company-name"></h3>
             <h1 data-i18n="slogan"></h1>
-            <h1 data-i18n="word"></h1>
+            <div class="sentence">
+              <h1 data-i18n="word-one"></h1>
+              <h1 class="span" data-i18n="word-two"></h1>
+            </div>
             <button>
               <a data-i18n="home-contact_button" href="pages/contact.html"></a>
             </button>
@@ -223,12 +226,14 @@
           <div class="news-box">
             <div class="news-content">
               <h3 data-i18n="news-letter-head"></h3>
-              <input
-                type="email"
-                id="news-email"
-                placeholder="Enter Email Please"
-              />
-              <button data-i18n="home-news-button"></button>
+              <div class="contact-section">
+                <input
+                  type="email"
+                  id="news-email"
+                  data-i18n-placeholder="home-news-placeholder"
+                />
+                <button data-i18n="home-news-button"></button>
+              </div>
             </div>
           </div>
         </div>

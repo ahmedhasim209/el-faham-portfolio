@@ -15,6 +15,8 @@
 * {
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 /* start components */
 .contanier {
@@ -111,7 +113,17 @@
   margin: 25px auto;
   line-height: 1.3;
 }
-.landing .contanier .landing-contet h1 span {
+.landing .contanier .landing-contet .sentence {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+.landing .contanier .landing-contet .sentence h1 {
+  margin: 25px 0;
+}
+.landing .contanier .landing-contet .sentence .span {
   color: #4ba950;
 }
 .landing .contanier .landing-contet button {
@@ -258,7 +270,7 @@
   position: absolute;
   width: 1.5px;
   height: 50%;
-  right: -33px;
+  transform: translateX(85px);
   top: 15px;
   background-color: #20b43f;
 }
@@ -327,19 +339,22 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0 auto;
 }
 .brief .image-holder {
-  width: 575px;
+  width: 550px;
   height: 415px;
 }
 .brief .image-holder img {
+  border-radius: 20px;
   width: 100%;
   height: 100%;
 }
 .brief .brief-content {
+  padding-top: 20px;
   padding-left: 25px;
+  width: 700px;
 }
 .brief .brief-content h3 {
   margin: 0;
@@ -347,12 +362,14 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 39px;
+  padding-bottom: 10px;
 }
 .brief .brief-content p {
   color: #4a4a4a;
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  padding-bottom: 25px;
 }
 .brief .brief-content button {
   padding: 15px 20px;
@@ -843,8 +860,16 @@
   font-weight: 500;
   line-height: 39px;
   color: white;
+  padding-bottom: 20px;
 }
-.news-letter .news-box .news-content input {
+.news-letter .news-box .news-content .contact-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.news-letter .news-box .news-content .contact-section input {
+  width: 270px;
   border: none;
   padding: 15px 20px;
   color: black;
@@ -852,14 +877,14 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.news-letter .news-box .news-content button {
+.news-letter .news-box .news-content .contact-section button {
+  width: 90px;
   background-color: #4ba950;
   color: white;
-  padding: 15px 10px;
+  padding: 15px 7px;
   border: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-left: -5px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
@@ -921,6 +946,7 @@
   line-height: 45px;
   text-align: center;
   color: #4ba950;
+  padding-bottom: 30px;
 }
 .contact-us .contacts-contanier {
   display: flex;

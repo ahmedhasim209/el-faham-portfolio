@@ -52,7 +52,8 @@ html {
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
-  .landing .contanier nav ul.close {
+  .landing .contanier nav ul.close,
+  .heading .contanier nav ul.close {
     position: fixed;
     z-index: 1001;
     width: 100%;
@@ -66,7 +67,8 @@ html {
     padding: 0;
     margin: 0;
   }
-  .landing .contanier nav ul.open {
+  .landing .contanier nav ul.open,
+  .heading .contanier nav ul.open {
     position: fixed;
     z-index: 1001;
     width: 75%;
@@ -81,8 +83,9 @@ html {
     margin: 0;
     backdrop-filter: blur(10px);
   }
-  .landing .contanier nav ul #close {
-    transform: translateX(-260px);
+  .landing .contanier nav ul #close,
+  .heading .contanier nav ul #close {
+    transform: translateX(-245px);
   }
   .brief .brief-content h3 {
     transform: translateX(-18%);

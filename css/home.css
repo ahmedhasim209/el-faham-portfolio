@@ -182,7 +182,7 @@
     height: 100vh;
     background-color: white;
     text-align: center;
-    transform: translateX(380px);
+    transform: translateX(400px);
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;
@@ -209,7 +209,7 @@
     font-size: 32px;
     position: absolute;
     top: 15px;
-    transform: translateX(260px);
+    transform: translateX(245px);
     cursor: pointer;
   }
   .landing .contanier nav ul li a {

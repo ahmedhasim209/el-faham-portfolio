@@ -50,6 +50,13 @@ html {
 .heading-conact .conact::before {
   right: 65%;
 }
+.story .story-holder .content-holder {
+  margin-top: 60px;
+  margin-right: 60px;
+}
+.challenges .content-holder .text-content p {
+  text-align: right;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
   .landing .contanier nav ul.close,
@@ -111,6 +118,9 @@ html {
   }
   .heading-about .heading-contet p {
     text-align: right;
+  }
+  .story .story-holder .content-holder {
+    margin-right: 0;
   }
   .story .story-holder .content-holder h3 {
     transform: translateX(-70px);

@@ -53,7 +53,8 @@ html {
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
   .landing .contanier nav ul.close,
-  .heading .contanier nav ul.close {
+  .heading .contanier nav ul.close,
+  .heading-about .contanier nav ul.close {
     position: fixed;
     z-index: 1001;
     width: 100%;
@@ -68,7 +69,8 @@ html {
     margin: 0;
   }
   .landing .contanier nav ul.open,
-  .heading .contanier nav ul.open {
+  .heading .contanier nav ul.open,
+  .heading-about .contanier nav ul.open {
     position: fixed;
     z-index: 1001;
     width: 75%;
@@ -84,7 +86,8 @@ html {
     backdrop-filter: blur(10px);
   }
   .landing .contanier nav ul #close,
-  .heading .contanier nav ul #close {
+  .heading .contanier nav ul #close,
+  .heading-about .contanier nav ul #close {
     transform: translateX(-245px);
   }
   .brief .brief-content h3 {
@@ -105,5 +108,14 @@ html {
   }
   .news-letter .news-box .news-content .contact-section input {
     width: 225px;
+  }
+  .heading-about .heading-contet p {
+    text-align: right;
+  }
+  .story .story-holder .content-holder h3 {
+    transform: translateX(-70px);
+  }
+  .team .heading p {
+    text-align: right;
   }
 }

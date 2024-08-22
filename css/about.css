@@ -69,7 +69,8 @@
   flex-wrap: nowrap;
   flex-direction: row;
 }
-.heading-about .contanier nav ul i {
+
+.heading-about .contanier nav ul #close {
   display: none;
 }
 .heading-about .contanier nav ul li a {
@@ -99,7 +100,8 @@
 }
 .heading-about .heading-contet p {
   margin: 0;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
@@ -138,7 +140,7 @@
     height: 100vh;
     background-color: white;
     text-align: center;
-    right: -100%;
+    transform: translateX(400px);
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;
@@ -152,7 +154,7 @@
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    right: 0;
+    transform: translateX(85px);
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;
@@ -160,12 +162,12 @@
     margin: 0;
     backdrop-filter: blur(10px);
   }
-  #close {
+  .heading-about .contanier nav ul #close {
     display: block;
     font-size: 32px;
     position: absolute;
     top: 15px;
-    right: 15px;
+    transform: translateX(245px);
     cursor: pointer;
   }
   .heading-about .contanier nav ul li a {
@@ -199,7 +201,7 @@
     font-size: 16px;
     text-align: left;
     margin: 0 auto;
-    width: fit-content;
+    width: 90%;
   }
 }
 /* end heading */
@@ -239,6 +241,7 @@
 }
 .story .story-holder .content-holder {
   margin-top: 60px;
+  margin-left: 60px;
 }
 .story .story-holder .content-holder h3 {
   font-size: 32px;
@@ -280,7 +283,7 @@
   .story .story-holder .content-holder h3 {
     position: absolute;
     top: 22px;
-    transform: translateX(28px);
+    transform: translateX(-40px);
     font-size: 18px;
     line-height: 22px;
     text-align: center;

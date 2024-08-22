@@ -193,7 +193,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  width: 670px;
+  width: 710px;
 }
 .heading-conact .conact .conacts-numbers .conact-cart {
   display: flex;
@@ -238,6 +238,23 @@
   .heading-conact .contanier nav {
     padding-top: 25px;
   }
+  .heading-conact .contanier nav #links {
+    align-items: flex-start;
+    border: 5px solid #4ba950;
+    justify-content: flex-start;
+    padding-top: 90px;
+  }
+  .heading-conact .contanier nav #links li {
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
+  .heading-conact .contanier nav #links li.language {
+    margin: 0;
+  }
+  .heading-conact .contanier nav #links li.language ul {
+    padding: 0;
+  }
   .heading-conact .contanier nav ul.close {
     position: fixed;
     z-index: 1001;
@@ -245,7 +262,7 @@
     height: 100vh;
     background-color: white;
     text-align: center;
-    right: -100%;
+    transform: translateX(400px);
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;
@@ -259,7 +276,7 @@
     height: 100vh;
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    right: 0;
+    transform: translateX(85px);
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;
@@ -267,12 +284,12 @@
     margin: 0;
     backdrop-filter: blur(10px);
   }
-  #close {
+  .heading-conact .contanier nav ul #close {
     display: block;
     font-size: 32px;
     position: absolute;
     top: 15px;
-    right: 15px;
+    transform: translateX(245px);
     cursor: pointer;
   }
   .heading-conact .contanier nav ul li a {

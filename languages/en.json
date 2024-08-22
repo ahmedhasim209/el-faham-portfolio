@@ -1,8 +1,8 @@
 {
     "home-link" : "Home",
     "products-link" : "Products",
-    "about-link" : "About US",
-    "contact-link" : "Contact US",
+    "about-link" : "About us",
+    "contact-link" : "Contact us",
     "company-name": "ElFahham Company",
     "slogan": "Seeding Growth,",
     "word-one" : "Harvesting", 
@@ -18,7 +18,7 @@
     "home-pagraph-one" : "ElFahham is a global leader in the field of importing, exporting, processing, and packaging agricultural goods for over 50 years.",
     "home-pagraph-two" : "We specialize in nuts, spices, grains, feed ingredients, and agricultural crops. We also distribute consumer-packaged goods to retail and foodservice industries.",
     "home-pagraph-three" : "Our products are ISO certified, ensuring the highest quality standards, and are Halal certified, meeting the strictest Halal requirements.",
-    "home-about_button" : "About Us More",
+    "home-about_button" : "Learn More",
     "why-us" : "Why US!",
     "why-us-p-head" : "We consistently achieve excellence through market analysis and prudent financial management.",
     "providing" : "Providing products at competitive prices",
@@ -56,6 +56,9 @@
     "home-news-placeholder" : "Enter Email Please",
     "home-news-button" : "Subscribe",
     "home-contact-us" : "Contact US",
+    "mail" : "Email",
+    "office" : "Office",
+    "mobile" : "Phone",
     "address" : "Abou Al Matamir, Damanhour Road Hosh Essa - Beheira",
     "copy-right" : "© 2024 El Fahham | All rights reserved",
     "products-heading" : "ElFahham Products",
@@ -65,7 +68,7 @@
     "herbs-products-link" : "Herbs and Spices",
     "nuts-products-link" : "Nuts",
     "white-kidney-beans" : "White kidney beans",
-    "whole-broad-beans" : "White kidney beans",
+    "whole-broad-beans" : "Whole broad beans",
     "split-broad-beans" : "Split broad beans",
     "whole-faba-beans" : "Whole faba beans",
     "peanuts" : "Peanuts",
@@ -148,5 +151,8 @@
     "number" : "Phone Number",
     "message" : "Message",
     "conatc-button" : "Send",
-    "address-conact" : ""
+    "conact-name" : "Enter Your Name",
+    "conact-emil" : "Enter Your Email",
+    "conact-phone" : "Enter Your Phone Number",
+    "conact-massage" : "Enter Your Message"
 }

@@ -280,13 +280,17 @@
   .story .story-holder .images-holder img:nth-child(3) {
     display: none;
   }
+  .story .story-holder .content-holder {
+    margin-left: 0;
+  }
   .story .story-holder .content-holder h3 {
     position: absolute;
     top: 22px;
-    transform: translateX(-40px);
+    transform: translateX(-15px);
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+    
   }
   .story .story-holder .content-holder p {
     font-size: 12px;

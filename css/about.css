@@ -133,6 +133,23 @@
     width: fit-content;
     margin: 0 auto;
   }
+  .heading-about .contanier nav #links {
+    align-items: flex-start;
+    border: 5px solid #4ba950;
+    justify-content: flex-start;
+    padding-top: 90px;
+  }
+  .heading-about .contanier nav #links li {
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
+  .heading-about .contanier nav #links li.language {
+    margin: 0;
+  }
+  .heading-about .contanier nav #links li.language ul {
+    padding: 0;
+  }
   .heading-about .contanier nav ul.close {
     position: fixed;
     z-index: 1001;
@@ -290,7 +307,6 @@
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    
   }
   .story .story-holder .content-holder p {
     font-size: 12px;

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="Put your description here." />
+    <meta
+      name="description"
+      content="Telephone: +20 10 67441764 / Adress: Abou Al Matamir, Damanhour Road Hosh Essa - Beheira / El Fahham Company"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css file -->
@@ -51,15 +54,11 @@
               <li class="language">
                 <ul>
                   <li>
-                    <a href="contact.html" onclick="changeLanguage('en')"
-                      >English</a
-                    >
+                    <a href="contact.html" onclick="changeLanguage()"
+                      ><i class="fa-solid fa-globe"></i
+                    ></a>
                   </li>
-                  <li>
-                    <a href="contact.html" onclick="changeLanguage('ar')"
-                      >عربي</a
-                    >
-                  </li>
+                  <li data-i18n="lang-name-three"></li>
                 </ul>
               </li>
             </ul>
@@ -72,25 +71,53 @@
                   <h3 data-i18n="conact-heading"></h3>
                   <p data-i18n="conact-heading-p"></p>
                 </div>
-                <div class="inputs-holder">
+                <form
+                  action="../conact_us.php"
+                  method="post"
+                  id="conact-form"
+                  class="inputs-holder"
+                >
                   <label data-i18n="name" for=""></label>
-                  <input data-i18n-placeholder="conact-name" type="name" />
+                  <input
+                    id="name"
+                    name="name"
+                    data-i18n-placeholder="conact-name"
+                    type="text"
+                  />
+                  <span class="name-error"></span>
                   <label data-i18n="email" for=""></label>
-                  <input data-i18n-placeholder="conact-emil" type="email" />
+                  <input
+                    id="email"
+                    name="email"
+                    data-i18n-placeholder="conact-emil"
+                    type="text"
+                  />
+                  <span class="emil-error"></span>
                   <label data-i18n="number" for=""></label>
-                  <input data-i18n-placeholder="conact-phone" type="number" />
+                  <input
+                    id="number"
+                    name="number"
+                    data-i18n-placeholder="conact-phone"
+                    type="text"
+                  />
+                  <span class="number-error"></span>
                   <label data-i18n="message" for=""></label>
                   <textarea
                     name=""
                     id=""
+                    name="message"
                     data-i18n-placeholder="conact-massage"
                   ></textarea>
-                  <button data-i18n="conatc-button" type="submit"></button>
-                </div>
+                  <button
+                    data-i18n="conatc-button"
+                    value="Send"
+                    type="submit"
+                  ></button>
+                </form>
               </div>
               <div class="map">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13692.541580795863!2d30.2819791485569!3d30.910839402090758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f60efbc16281d7%3A0xd9983a4fbf6ac68!2sHoush%20Eissa%2C%20Al%20Qarinein%2C%20Hosh%20Eissa%2C%20Beheira%20Governorate!5e0!3m2!1sen!2seg!4v1722694609695!5m2!1sen!2seg"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213.94747603851772!2d30.297578935561454!3d30.910162289697226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f60f4800cbfa17%3A0x29909ebb41d2d920!2z2KfZhNmB2K3Yp9mFINmE2YTYp9iz2KrZitix2KfYryDZiNin2YTYqti12K_Zitix!5e0!3m2!1sen!2seg!4v1725488495656!5m2!1sen!2seg"
                   width="400"
                   height="500"
                   style="border: 0"
@@ -104,25 +131,22 @@
               <div class="conact-cart">
                 <i class="fa-solid fa-phone"></i>
                 <div class="numbers">
-                  <p data-i18n="mobile">PHONE</p>
+                  <p data-i18n="mobile"></p>
                   <span>+20 106 744 1764</span>
                 </div>
               </div>
               <div class="conact-cart">
                 <i class="fa-solid fa-envelope"></i>
                 <div class="numbers">
-                  <p data-i18n="mail">EMAIL</p>
-                  <span>El Fahaam@mail.com</span>
+                  <p data-i18n="mail"></p>
+                  <span>info@elfahham.com</span>
                 </div>
               </div>
               <div class="conact-cart">
                 <i class="fa-solid fa-location-dot"></i>
                 <div class="numbers">
-                  <p data-i18n="office">Office</p>
-                  <span data-i18n="address"
-                    >Abou Al Matamir-Damanhour Road<br />
-                    Hosh Essa - Beheira</span
-                  >
+                  <p data-i18n="office"></p>
+                  <span data-i18n="address"></span>
                 </div>
               </div>
             </div>
@@ -151,11 +175,25 @@
             </ul>
           </div>
           <div class="icons-holder">
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
+            <a href="https://wa.me/+201024672470" target="_blank"
+              ><i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/elfahamcompany?mibextid=LQQJ4d"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/elfahham.eg/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://x.com/elfahhameg?s=11" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/elfahham-for-agricultural-crops/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </div>
           <hr />
           <p data-i18n="copy-right"></p>

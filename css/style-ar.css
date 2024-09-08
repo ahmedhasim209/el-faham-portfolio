@@ -42,6 +42,9 @@ html {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
+.news-letter .news-box .news-content #news-form span.email-error {
+  right: 20%;
+}
 .contact-us .contacts-contanier {
   direction: ltr;
 }
@@ -85,6 +88,12 @@ html {
   .heading-about .contanier nav #links li.language {
     margin: 0;
   }
+  .landing .contanier nav ul .language ul li,
+  .heading-conact .contanier nav ul .language ul li,
+  .heading .contanier nav ul .language ul li,
+  .heading-about .contanier nav ul .language ul li {
+    color: black;
+  }
   .landing .contanier nav ul.close,
   .heading .contanier nav ul.close,
   .heading-about .contanier nav ul.close,
@@ -95,7 +104,7 @@ html {
     height: 100vh;
     background-color: white;
     text-align: center;
-    transform: translateX(-400px);
+    transform: translateX(-430px);
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;

@@ -58,7 +58,7 @@
                       ><i class="fa-solid fa-globe"></i
                     ></a>
                   </li>
-                  <li data-i18n="lang-name-three"></li>
+                  <li onclick="changeLanguage()" data-i18n="lang-name-three"></li>
                 </ul>
               </li>
             </ul>
@@ -90,7 +90,7 @@
                     id="email"
                     name="email"
                     data-i18n-placeholder="conact-emil"
-                    type="text"
+                    type="email"
                   />
                   <span class="emil-error"></span>
                   <label data-i18n="number" for=""></label>
@@ -98,12 +98,11 @@
                     id="number"
                     name="number"
                     data-i18n-placeholder="conact-phone"
-                    type="text"
+                    type="number"
                   />
                   <span class="number-error"></span>
                   <label data-i18n="message" for=""></label>
                   <textarea
-                    name=""
                     id=""
                     name="message"
                     data-i18n-placeholder="conact-massage"

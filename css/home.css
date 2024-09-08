@@ -74,6 +74,9 @@
   color: white;
   margin: auto 0;
 }
+.landing .contanier nav ul .language ul li {
+  cursor: pointer;
+}
 /* end nav */
 .landing {
   position: relative;

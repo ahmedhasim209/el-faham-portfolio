@@ -81,6 +81,7 @@
   color: #20b43f;
 }
 .heading-about .contanier nav ul .language ul li {
+  cursor: pointer;
   color: white;
   margin: 0 5px;
 }

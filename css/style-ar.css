@@ -12,6 +12,12 @@ html {
 * {
   font-family: "Helvetica", sans-serif;
 }
+.landing .contanier nav ul .language ul li,
+.heading-conact .contanier nav ul .language ul li,
+.heading .contanier nav ul .language ul li,
+.heading-about .contanier nav ul .language ul li {
+  cursor: pointer;
+}
 .number .num-card:not(:last-child)::before {
   transform: translateX(-80px);
 }

@@ -222,8 +222,6 @@ viewProducts();
 const emailErorr = document.querySelector(".email-error");
 
 const newsForm = document.getElementById("news-form");
-const mail = document.getElementById("news-email");
-
 // Function to validate email format
 function isValidEmail(email) {
   const emailRegx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
@@ -242,5 +240,7 @@ newsForm.addEventListener("submit", (event) => {
   } else if (!isValidEmail(emailInput)) {
     emailErorr.innerHTML = "Invalid email format";
     event.preventDefault();
+  } else if (emailInput && isValidEmail(emailInput)) {
+    newsForm.submit();
   }
 });

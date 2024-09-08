@@ -71,6 +71,8 @@ form.addEventListener("submit", (event) => {
   } else if (!isValidName(nameInput)) {
     nameErorr.textContent = "Invalid Name format";
     event.preventDefault();
+  } else {
+    form.submit();
   }
 
   // Validate email
@@ -80,6 +82,8 @@ form.addEventListener("submit", (event) => {
   } else if (!isValidEmail(emailInput)) {
     mailErorr.textContent = "Invalid Email format";
     event.preventDefault();
+  } else {
+    form.submit();
   }
 
   // Validate number
@@ -89,5 +93,7 @@ form.addEventListener("submit", (event) => {
   } else if (!isValidNumber(numberInput)) {
     numberErorr.textContent = "Invalid Number format";
     event.preventDefault();
+  } else {
+    form.submit();
   }
 });

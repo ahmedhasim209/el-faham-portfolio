@@ -192,6 +192,10 @@
   .landing .contanier nav #links li.language ul {
     padding: 0;
   }
+  .landing .contanier nav ul .language ul li {
+    font-weight: 600;
+    color: #000;
+  }
   .landing .contanier nav ul.close {
     position: fixed;
     z-index: 1001;
@@ -199,7 +203,7 @@
     height: 100vh;
     background-color: white;
     text-align: center;
-    transform: translateX(400px);
+    transform: translateX(430px);
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;
@@ -888,6 +892,7 @@
   padding-bottom: 20px;
 }
 .news-letter .news-box .news-content .contact-section {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -915,6 +920,14 @@
   font-weight: 500;
   line-height: 19px;
 }
+.news-letter .news-box .news-content #news-form span.email-error {
+  position: absolute;
+  bottom: -40%;
+  left: 37%;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
 .news-letter .news-box .news-content input:focus {
   outline: none;
 }
@@ -939,6 +952,10 @@
     width: 120px;
     font-size: 12px;
   }
+  .news-letter .news-box .news-content #news-form span.email-error {
+    bottom: -40%;
+    left: 5%;
+  }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -959,6 +976,10 @@
   }
   .news-letter .news-box .news-content button {
     padding: 12px 25px;
+  }
+  .news-letter .news-box .news-content #news-form span.email-error {
+    bottom: -45%;
+    left: 27%;
   }
 }
 /* end news letter */
@@ -1099,7 +1120,9 @@ footer .icons-holder {
   margin: 0 auto;
   margin-bottom: 20px;
 }
-footer .icons-holder i {
+footer .icons-holder a i {
+  width: 26px;
+  height: 26px;
   color: #20b43f;
   padding: 5px;
   background-color: white;

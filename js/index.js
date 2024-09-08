@@ -218,3 +218,29 @@ const viewProducts = () => {
   }
 };
 viewProducts();
+// select error span for email
+const emailErorr = document.querySelector(".email-error");
+
+const newsForm = document.getElementById("news-form");
+const mail = document.getElementById("news-email");
+
+// Function to validate email format
+function isValidEmail(email) {
+  const emailRegx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+  return emailRegx.test(email);
+}
+newsForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // select email input value
+  const emailInput = document.getElementById("news-email").value;
+  // reset error massage
+  emailErorr.innerHTML = "";
+  // Validate email
+  if (!emailInput) {
+    emailErorr.innerHTML = "email is required*";
+    event.preventDefault();
+  } else if (!isValidEmail(emailInput)) {
+    emailErorr.innerHTML = "Invalid email format";
+    event.preventDefault();
+  }
+});

@@ -79,6 +79,10 @@
 .heading-conact .contanier nav ul li a:hover {
   color: #20b43f;
 }
+.heading-conact .contanier nav ul .language ul li {
+  color: white;
+  margin: 0 5px;
+}
 /* end nav */
 .heading-conact .conact {
   margin-top: 50px;
@@ -175,7 +179,22 @@
   color: white;
   border-radius: 12px;
   padding: 10px 16px;
+  cursor: pointer;
 }
+.heading-conact .conact .conact-holder .conact-info .inputs-holder .name-error,
+.heading-conact .conact .conact-holder .conact-info .inputs-holder .emil-error,
+.heading-conact
+  .conact
+  .conact-holder
+  .conact-info
+  .inputs-holder
+  .number-error {
+  color: #4ba950;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: -15px;
+}
+
 .heading-conact .conact .conact-holder .map {
   width: 500px;
   height: 500px;
@@ -255,6 +274,11 @@
   .heading-conact .contanier nav #links li.language ul {
     padding: 0;
   }
+  .heading-conact .contanier nav ul .language ul li {
+    font-weight: 600;
+    color: black;
+    margin: 0 5px;
+  }
   .heading-conact .contanier nav ul.close {
     position: fixed;
     z-index: 1001;
@@ -262,7 +286,7 @@
     height: 100vh;
     background-color: white;
     text-align: center;
-    transform: translateX(400px);
+    transform: translateX(430px);
     top: 0;
     transition: 0.5s ease-out;
     flex-direction: column;
@@ -475,6 +499,8 @@ footer .icons-holder {
   margin-bottom: 20px;
 }
 footer .icons-holder i {
+  width: 26px;
+  height: 26px;
   color: #20b43f;
   padding: 5px;
   background-color: white;

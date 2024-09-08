@@ -30,11 +30,19 @@ async function fetchLanguageData(lang) {
   return response.json();
 }
 // Function to change language
-async function changeLanguage(lang) {
-  await setLanguagePreference(lang);
-  const langData = await fetchLanguageData(lang);
-  updateContent(langData);
-  toggleArabicStylesheet(lang); // Toggle Arabic stylesheet
+async function changeLanguage() {
+  let lang = localStorage.getItem("language");
+  if (lang === "en") {
+    await setLanguagePreference("ar");
+    const langData = await fetchLanguageData("ar");
+    updateContent(langData);
+    toggleArabicStylesheet("ar"); // Toggle Arabic stylesheet
+  } else {
+    await setLanguagePreference("en");
+    const langData = await fetchLanguageData("en");
+    updateContent(langData);
+    toggleArabicStylesheet("en"); // Toggle Arabic stylesheet
+  }
 }
 // Function to toggle Arabic stylesheet based on language selection
 function toggleArabicStylesheet(lang) {

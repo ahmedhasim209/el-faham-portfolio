@@ -1036,8 +1036,16 @@
   font-weight: 600;
   line-height: 24px;
   color: #4ba950;
+  -webkit-text-fill-color: #4ba950; /* Ensures compatibility */
   margin: 0;
   margin-top: 15px;
+}
+@supports (-webkit-appearance: none) {
+  .contact-us .contacts-contanier .contacts-box p {
+    /* Safari-specific styles */
+    color: #4ba950;
+    text-decoration: none;
+  }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 767px) {
@@ -1060,6 +1068,13 @@
   .contact-us .contacts-contanier .contacts-box p {
     font-size: 12px;
     line-height: 24px;
+  }
+  @supports (-webkit-appearance: none) {
+    .contact-us .contacts-contanier .contacts-box p {
+      /* Safari-specific styles */
+      color: #4ba950;
+      text-decoration: none;
+    }
   }
 }
 /* Medium devices (tablets, 768px and up) */

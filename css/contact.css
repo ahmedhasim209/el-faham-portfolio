@@ -243,6 +243,7 @@
 }
 .heading-conact .conact .conacts-numbers .numbers span {
   color: #4ba950;
+  -webkit-text-fill-color: #4ba950; /* Ensures compatibility */
   font-size: 12.22px;
   font-weight: 400;
   line-height: 19px;
@@ -390,6 +391,13 @@
   }
   .heading-conact .conact .conacts-numbers .conact-cart .numbers {
     gap: 5px;
+  }
+  @supports (-webkit-appearance: none) {
+    .heading-conact .conact .conacts-numbers .numbers span {
+      /* Safari-specific styles */
+      text-decoration: none;
+      color: #4ba950;
+    }
   }
 }
 /* Medium devices (tablets, 768px and up) */

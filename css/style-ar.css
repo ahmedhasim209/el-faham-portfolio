@@ -1,0 +1,183 @@
+html {
+  direction: rtl;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica/alfont_com_هلفيتيكا-عربي-.ttf")
+    format("truetype");
+  font-weight: 1 1000;
+  font-style: oblique 0deg 10deg;
+  font-display: swap;
+}
+* {
+  font-family: "Helvetica", sans-serif;
+}
+.landing .contanier nav ul .language ul li,
+.heading-conact .contanier nav ul .language ul li,
+.heading .contanier nav ul .language ul li,
+.heading-about .contanier nav ul .language ul li {
+  cursor: pointer;
+}
+.number .num-card:not(:last-child)::before {
+  transform: translateX(-80px);
+}
+.brief .brief-content {
+  padding-top: 20px;
+  padding-right: 25px;
+  width: 700px;
+}
+
+.why-us .heading h2 {
+  margin-bottom: 10px;
+}
+.why-us .features .features-cart h4,
+.why-us .features .features-cart p {
+  text-align: right;
+}
+.news-letter .news-box .news-content .contact-section input {
+  width: 270px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.news-letter .news-box .news-content .contact-section button {
+  width: 90px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.news-letter .news-box .news-content #news-form span.email-error {
+  right: 20%;
+}
+.contact-us .contacts-contanier {
+  direction: ltr;
+}
+.heading-conact .conact::before {
+  right: 65%;
+}
+.story .story-holder .content-holder {
+  margin-top: 60px;
+  margin-right: 60px;
+}
+.challenges .content-holder .text-content p {
+  text-align: right;
+}
+.heading-conact .conact .conacts-numbers {
+  direction: ltr;
+  padding-right: 45px;
+  text-align: right;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .landing .contanier nav #links,
+  .heading-conact .contanier nav #links,
+  .heading .contanier nav #links,
+  .heading-about .contanier nav #links {
+    align-items: flex-start;
+    border: 5px solid #4ba950;
+    justify-content: flex-start;
+    padding-top: 90px;
+  }
+  .landing .contanier nav #links li,
+  .heading-conact .contanier nav #links li,
+  .heading .contanier nav #links li,
+  .heading-about .contanier nav #links li {
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 35px;
+  }
+  .landing .contanier nav #links li.language,
+  .heading-conact .contanier nav #links li.language,
+  .heading .contanier nav #links li.language,
+  .heading-about .contanier nav #links li.language {
+    margin: 0;
+  }
+  .landing .contanier nav ul .language ul li,
+  .heading-conact .contanier nav ul .language ul li,
+  .heading .contanier nav ul .language ul li,
+  .heading-about .contanier nav ul .language ul li {
+    color: black;
+  }
+  .landing .contanier nav ul.close,
+  .heading .contanier nav ul.close,
+  .heading-about .contanier nav ul.close,
+  .heading-conact .contanier nav ul.close {
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    transform: translateX(-430px);
+    top: 0;
+    transition: 0.5s ease-out;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .landing .contanier nav ul.open,
+  .heading .contanier nav ul.open,
+  .heading-about .contanier nav ul.open,
+  .heading-conact .contanier nav ul.open {
+    position: fixed;
+    z-index: 1001;
+    width: 75%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    transform: translateX(-85px);
+    top: 0;
+    transition: 0.5s ease-out;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(10px);
+  }
+  .landing .contanier nav ul #close,
+  .heading .contanier nav ul #close,
+  .heading-about .contanier nav ul #close,
+  .heading-conact .contanier nav ul #close {
+    transform: translateX(-245px);
+  }
+  .brief .brief-content h3 {
+    transform: translateX(-18%);
+    position: absolute;
+    top: 25px;
+    font-size: 19px;
+  }
+  .brief .brief-content {
+    width: 100%;
+  }
+  .brief .brief-content p {
+    max-width: 100%;
+  }
+  .process h2 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .news-letter .news-box .news-content .contact-section input {
+    width: 225px;
+  }
+  .heading-about .heading-contet p {
+    text-align: right;
+  }
+  .story .story-holder .content-holder {
+    margin-right: 0;
+  }
+  .story .story-holder .content-holder h3 {
+    transform: translateX(-70px);
+  }
+  .team .heading p {
+    text-align: right;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .number .num-card:not(:last-child)::before {
+    transform: translateX(-53px);
+  }
+  .heading-conact .conact::before {
+    right: 75%;
+  }
+}

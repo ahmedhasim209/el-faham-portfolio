@@ -1,0 +1,562 @@
+:root {
+  --section-padding: 100px;
+  --main-color: #108824;
+  --secondary-color: #20b43f;
+  --hover-color: #acff00;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype");
+  font-weight: 1 1000;
+  font-style: oblique 0deg 10deg;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+/* start components */
+.contanier {
+  width: 90%;
+  margin: 0 auto;
+}
+/* end components */
+/* start heading */
+.heading-conact {
+  position: relative;
+  height: 150vh;
+  background-image: url(../images/contact-background.webp);
+  background-size: cover;
+}
+.heading-conact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.516);
+  z-index: 1;
+}
+/* start nav */
+.heading-conact .contanier nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  gap: 30%;
+  z-index: 100;
+}
+.heading-conact .contanier nav a {
+  width: 20%;
+}
+.heading-conact .contanier nav a img {
+  width: 200px;
+  height: 60px;
+}
+.burger {
+  display: none;
+}
+#close {
+  display: none;
+}
+.heading-conact .contanier nav ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.heading-conact .contanier nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.heading-conact .contanier nav ul li a:hover {
+  color: #20b43f;
+}
+.heading-conact .contanier nav ul .language ul li {
+  cursor: pointer;
+  color: white;
+  margin: 0 5px;
+}
+/* end nav */
+.heading-conact .conact {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: white;
+  width: 1100px;
+  height: 750px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.heading-conact .conact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 35%;
+  background-color: #4ba950;
+  z-index: -1;
+}
+.heading-conact .conact .conact-holder {
+  padding: 45px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px;
+}
+.heading-conact .conact .conact-holder .conact-info {
+  width: 500px;
+}
+.heading-conact .conact .conact-holder .conact-info .heading-text {
+  margin-bottom: 30px;
+}
+.heading-conact .conact .conact-holder .conact-info .heading-text h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0;
+}
+.heading-conact .conact .conact-holder .conact-info .heading-text h3 span {
+  color: #4ba950;
+}
+.heading-conact .conact .conact-holder .conact-info .heading-text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4a4a4a;
+  margin: 0;
+}
+.heading-conact .conact .conact-holder .conact-info .inputs-holder {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.heading-conact .conact .conact-holder .conact-info .inputs-holder label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4a4a4a;
+  text-align: start;
+}
+.heading-conact .conact .conact-holder .conact-info .inputs-holder input {
+  margin-bottom: 20px;
+  width: 430px;
+  outline: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+}
+.heading-conact .conact .conact-holder .conact-info .inputs-holder textarea {
+  border: 1px solid #dcdcdc;
+  outline: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  width: 430px;
+  height: 120px;
+  resize: none;
+}
+.heading-conact .conact .conact-holder .conact-info .inputs-holder button {
+  margin-top: 20px;
+  width: 430px;
+  border: none;
+  background-color: #4ba950;
+  color: white;
+  border-radius: 12px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.heading-conact .conact .conact-holder .conact-info .inputs-holder .name-error,
+.heading-conact .conact .conact-holder .conact-info .inputs-holder .emil-error,
+.heading-conact
+  .conact
+  .conact-holder
+  .conact-info
+  .inputs-holder
+  .number-error {
+  color: #4ba950;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: -15px;
+}
+
+.heading-conact .conact .conact-holder .map {
+  width: 500px;
+  height: 500px;
+  margin-top: 57px;
+}
+.heading-conact .conact .conact-holder .map iframe {
+  margin: 0 auto;
+  border-radius: 12px;
+}
+.heading-conact .conact .conacts-numbers {
+  padding-left: 45px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 710px;
+}
+.heading-conact .conact .conacts-numbers .conact-cart {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+.heading-conact .conact .conacts-numbers .conact-cart i {
+  color: #4ba950;
+  text-align: start;
+  font-size: 24px;
+}
+.heading-conact .conact .conacts-numbers .numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.heading-conact .conact .conacts-numbers .numbers p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  margin: 0;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+.heading-conact .conact .conacts-numbers .numbers span {
+  color: #4ba950;
+  -webkit-text-fill-color: #4ba950; /* Ensures compatibility */
+  font-size: 12.22px;
+  font-weight: 400;
+  line-height: 19px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .heading-conact {
+    position: relative;
+    height: 200vh;
+    background-position: center;
+    overflow: hidden;
+  }
+  .heading-conact .contanier nav {
+    padding-top: 25px;
+  }
+  .heading-conact .contanier nav #links {
+    align-items: flex-start;
+    border: 5px solid #4ba950;
+    justify-content: flex-start;
+    padding-top: 90px;
+  }
+  .heading-conact .contanier nav #links li {
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
+  .heading-conact .contanier nav #links li.language {
+    margin: 0;
+  }
+  .heading-conact .contanier nav #links li.language ul {
+    padding: 0;
+  }
+  .heading-conact .contanier nav ul .language ul li {
+    font-weight: 600;
+    color: black;
+    margin: 0 5px;
+  }
+  .heading-conact .contanier nav ul.close {
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    transform: translateX(430px);
+    top: 0;
+    transition: 0.5s ease-out;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .heading-conact .contanier nav ul.open {
+    position: fixed;
+    z-index: 1001;
+    width: 75%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    transform: translateX(85px);
+    top: 0;
+    transition: 0.5s ease-out;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    backdrop-filter: blur(10px);
+  }
+  .heading-conact .contanier nav ul #close {
+    display: block;
+    font-size: 32px;
+    position: absolute;
+    top: 15px;
+    transform: translateX(245px);
+    cursor: pointer;
+  }
+  .heading-conact .contanier nav ul li a {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .heading-conact .contanier nav ul li a:hover {
+    color: #4a4a4a;
+  }
+  .heading-conact .contanier nav .burger {
+    display: block;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  .heading-conact .conact {
+    width: 350px;
+    height: 165vh;
+  }
+  .heading-conact .conact::before {
+    content: none;
+    width: 400px;
+  }
+  .heading-conact .conact .conact-holder {
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 25px;
+    gap: 50px;
+    height: 140vh;
+  }
+  .heading-conact .conact .conact-holder .conact-info,
+  .heading-conact .conact .conact-holder .conact-info .heading-text,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder input,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder textarea,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder button {
+    width: 100%;
+  }
+  .heading-conact .conact .conact-holder .conact-info .heading-text h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .heading-conact .conact .conact-holder .conact-info .heading-text p,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder label,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder input {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .heading-conact .conact .conact-holder .map {
+    width: 350px;
+    margin: 0 auto;
+    padding: 0;
+    height: 560px;
+  }
+  .heading-conact .conact .conact-holder .map iframe {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+  }
+  .heading-conact .conact .conacts-numbers {
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .heading-conact .conact .conacts-numbers .conact-cart {
+    gap: 15px;
+  }
+  .heading-conact .conact .conacts-numbers .conact-cart .numbers {
+    gap: 5px;
+  }
+  @supports (-webkit-appearance: none) {
+    .heading-conact .conact .conacts-numbers .numbers span {
+      /* Safari-specific styles */
+      text-decoration: none;
+      color: #4ba950;
+    }
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading-conact .contanier nav ul {
+    justify-content: space-between;
+  }
+  .heading-conact {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .heading-conact .conact {
+    width: 90%;
+    height: 800px;
+  }
+  .heading-conact .conact::before {
+    width: 25%;
+  }
+  .heading-conact .conact .conact-holder {
+    padding: 25px;
+    gap: 20px;
+  }
+  .heading-conact .conact .conact-holder .conact-info {
+    width: 420px;
+    padding-top: 60px;
+  }
+  .heading-conact .conact .conact-holder .conact-info .heading-text h3 {
+    font-size: 24px;
+    line-height: 29.3px;
+  }
+  .heading-conact .conact .conact-holder .conact-info .heading-text p {
+    font-size: 14px;
+    line-height: 17.09px;
+  }
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder {
+    width: 100%;
+  }
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder input,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder textarea,
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder button {
+    width: 100%;
+  }
+  .heading-conact .conact .conact-holder .conact-info .inputs-holder label {
+    font-size: 14px;
+    line-height: 17.09px;
+  }
+  .heading-conact .conact .conact-holder .map iframe {
+    width: 100%;
+    border-radius: 30px;
+  }
+  .heading-conact .conact .conacts-numbers {
+    width: 65%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  .heading-conact .conact .conacts-numbers .conact-cart {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 190px;
+  }
+}
+/* end heading */
+/* start footer */
+footer {
+  background-color: #4ba950;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+footer a {
+  width: 20%;
+}
+footer img {
+  width: 200px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+footer .pages ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin: 20px auto;
+  padding: 0;
+}
+footer .pages ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .icons-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+footer .icons-holder i {
+  width: 26px;
+  height: 26px;
+  color: #20b43f;
+  padding: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+footer p {
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  footer .pages ul {
+    width: 85%;
+  }
+  footer .pages ul li a {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  footer .icons-holder {
+    width: 65%;
+    gap: 7.5px;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer img {
+    width: 133px;
+    height: 41px;
+  }
+  footer .pages ul {
+    width: 45%;
+  }
+  footer .pages ul li a {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  footer .icons-holder {
+    width: 30%;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+/* end footer */

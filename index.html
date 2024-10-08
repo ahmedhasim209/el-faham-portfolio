@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="ElFahham Company | Seeding Growth, Harvesting Opportunities
+    ElFahham Company is a global leader in the field of importing, exporting, processing, and packaging agricultural goods for over 50 years."
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css file -->
+    <link rel="stylesheet" href="css/home.css" />
+    <!-- all main file -->
+    <link rel="stylesheet" href="css/all.min.css" defer />
+    <!-- normliaz cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      defer
+    />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>ElFahham</title>
+  </head>
+  <body>
+    <!-- start main -->
+    <main>
+      <!-- start landing -->
+      <section class="landing">
+        <div class="contanier">
+          <!-- start nav -->
+          <nav>
+            <a href="index.html"
+              ><img src="images/logo-eng.webp" alt="elfaham-logo"
+            /></a>
+            <div class="burger">
+              <i id="burger-icon" class="fa-solid fa-bars"></i>
+            </div>
+            <ul id="links" class="close">
+              <i id="close" class="fa-regular fa-circle-xmark"></i>
+              <li><a href="index.html" data-i18n="home-link"></a></li>
+              <li>
+                <a href="pages/products.html" data-i18n="products-link"></a>
+              </li>
+              <li>
+                <a href="pages/about.html" data-i18n="about-link"></a>
+              </li>
+              <li>
+                <a href="pages/contact.html" data-i18n="contact-link"></a>
+              </li>
+              <li class="language">
+                <ul>
+                  <li>
+                    <a href="index.html" onclick="changeLanguage()"
+                      ><i class="fa-solid fa-globe"></i
+                    ></a>
+                  </li>
+                  <li onclick="changeLanguage()" data-i18n="lang-name"></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- end nav -->
+          <div class="landing-contet">
+            <h3 data-i18n="company-name"></h3>
+            <h1 data-i18n="slogan"></h1>
+            <div class="sentence">
+              <h1 data-i18n="word-one"></h1>
+              <h1 class="span" data-i18n="word-two"></h1>
+            </div>
+            <button>
+              <a data-i18n="home-contact_button" href="pages/contact.html"></a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- end landing -->
+      <!-- start numbers -->
+      <div class="contanier">
+        <div id="numbers-holder" class="number"></div>
+      </div>
+      <!-- end numbers -->
+      <!-- start brief -->
+      <div class="contanier">
+        <div class="brief">
+          <div class="image-holder">
+            <img src="images/brief.webp" alt="hand-hold-plant" />
+          </div>
+          <div class="brief-content">
+            <h3 data-i18n="welcome_message"></h3>
+            <p data-i18n="home-pagraph-one"></p>
+            <p data-i18n="home-pagraph-two"></p>
+            <p data-i18n="home-pagraph-three"></p>
+            <button>
+              <a href="pages/about.html" data-i18n="home-about_button"></a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- end brief -->
+      <!-- start why us -->
+      <div class="contanier">
+        <section class="why-us">
+          <div class="heading">
+            <h2 data-i18n="why-us"></h2>
+            <p data-i18n="why-us-p-head"></p>
+          </div>
+          <div class="features">
+            <div class="features-cart">
+              <div class="icon-holder">
+                <img src="images/prices.webp" alt="dollar" />
+              </div>
+              <h4 data-i18n="providing"></h4>
+              <p data-i18n="providing-p"></p>
+            </div>
+            <div class="features-cart">
+              <div class="icon-holder">
+                <img src="images/logistics.webp" alt="logistics" />
+              </div>
+              <h4 data-i18n="logistics"></h4>
+              <p data-i18n="logistics-p"></p>
+            </div>
+            <div class="features-cart">
+              <div class="icon-holder">
+                <img src="images/quality.webp" alt="quality" />
+              </div>
+              <h4 data-i18n="quality"></h4>
+              <p data-i18n="quality-p"></p>
+            </div>
+            <div class="features-cart">
+              <div class="icon-holder">
+                <img src="images/factory.webp" alt="factory" />
+              </div>
+              <h4 data-i18n="factory"></h4>
+              <p data-i18n="factory-p"></p>
+            </div>
+            <div class="features-cart">
+              <div class="icon-holder">
+                <img src="images/time.webp" alt="time" />
+              </div>
+              <h4 data-i18n="time"></h4>
+              <p data-i18n="time-p"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- end why us -->
+      <!-- start best seller -->
+      <div class="contanier">
+        <section class="best-seller">
+          <div class="heading">
+            <h2 data-i18n="best-seller"></h2>
+            <p data-i18n="best-seller-home-p"></p>
+          </div>
+          <div id="products-holder"></div>
+          <button>
+            <a href="pages/products.html" data-i18n="home-products_button"></a>
+          </button>
+        </section>
+      </div>
+      <!-- end best seller -->
+      <!-- start process -->
+      <section class="process">
+        <div class="contanier">
+          <h2 data-i18n="process"></h2>
+          <div class="cart-holder">
+            <div class="process-cart">
+              <div class="img-holder">
+                <img src="images/harvesting.webp" alt="harvesting" />
+              </div>
+              <p data-i18n="harvesting"></p>
+            </div>
+            <div class="process-cart">
+              <div class="img-holder">
+                <img src="images/storage.webp" alt="storage" />
+              </div>
+              <p data-i18n="storages"></p>
+            </div>
+            <div class="process-cart">
+              <div class="img-holder">
+                <img src="images/processing.webp" alt="processing" />
+              </div>
+              <p data-i18n="processing"></p>
+            </div>
+            <div class="process-cart">
+              <div class="img-holder">
+                <img src="images/selection.webp" alt="selection" />
+              </div>
+              <p data-i18n="selection"></p>
+            </div>
+            <div class="process-cart">
+              <div class="img-holder">
+                <img src="images/packaging.webp" alt="packaging" />
+              </div>
+              <p data-i18n="packaging"></p>
+            </div>
+            <div class="process-cart">
+              <div class="img-holder">
+                <img src="images/quality-control.webp" alt="quality-control" />
+              </div>
+              <p data-i18n="qualitys"></p>
+            </div>
+            <div class="process-cart">
+              <div class="img-holder">
+                <img src="images/final-control.webp" alt="final-control" />
+              </div>
+              <p data-i18n="control"></p>
+            </div>
+            <div class="process-cart">
+              <div class="img-holder">
+                <img
+                  src="images/logistics-shipping.webp"
+                  alt="logistics-shipping"
+                />
+              </div>
+              <p data-i18n="logistics-Shipping"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end process -->
+      <!-- start news letter -->
+      <section class="news-letter">
+        <div class="contanier">
+          <div class="news-box">
+            <div class="news-content">
+              <h3 data-i18n="news-letter-head"></h3>
+              <form
+                action="process_form.php"
+                method="post"
+                id="news-form"
+                class="contact-section"
+              >
+                <input
+                  name="email"
+                  type="email"
+                  id="news-email"
+                  data-i18n-placeholder="home-news-placeholder"
+                />
+                <button
+                  type="submit"
+                  data-i18n="home-news-button"
+                  value="subscribe"
+                ></button>
+                <span class="email-error"></span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end news letter -->
+      <!-- start contact us -->
+      <section class="contact-us">
+        <div class="contanier">
+          <h2 data-i18n="home-contact-us"></h2>
+          <div class="contacts-contanier">
+            <div class="contacts-box">
+              <i class="fa-regular fa-envelope"></i>
+              <h4 class="tittle" data-i18n="mail"></h4>
+              <p>info@elfahham.com</p>
+            </div>
+            <div class="contacts-box">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4 class="tittle" data-i18n="office"></h4>
+              <p data-i18n="address"></p>
+            </div>
+            <div class="contacts-box">
+              <i class="fa-solid fa-phone"></i>
+              <h4 class="tittle" data-i18n="mobile"></h4>
+              <p>+20 106 744 1764</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end contact us -->
+      <!-- start footer -->
+      <footer>
+        <div class="contanier">
+          <a href="index.html"
+            ><img src="images/logo-eng.webp" alt="elfaham-logo"
+          /></a>
+          <div class="pages">
+            <ul>
+              <li><a href="index.html" data-i18n="home-link"></a></li>
+              <li>
+                <a href="pages/products.html" data-i18n="products-link"></a>
+              </li>
+              <li>
+                <a href="pages/about.html" data-i18n="about-link"></a>
+              </li>
+              <li>
+                <a href="pages/contact.html" data-i18n="contact-link"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="icons-holder">
+            <a href="https://wa.me/+201067441764" target="_blank"
+              ><i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/elfahamcompany?mibextid=LQQJ4d"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/elfahham.eg/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://x.com/elfahhameg?s=11" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/elfahham-for-agricultural-crops/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <hr />
+          <p data-i18n="copy-right"></p>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </main>
+    <!-- end main -->
+    <script src="js/index.js"></script>
+    <script src="js/language.js"></script>
+  </body>
+</html>

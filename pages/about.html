@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="ElFahham Company | About US
+    ElFahham Agricultural Crops Company, founded in 1972, has grown from a single shop to a leading agricultural supplier under the family's leadership"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css file -->
+    <link rel="stylesheet" href="../css/about.css" />
+    <!-- all main file -->
+    <link rel="stylesheet" href="../css/all.min.css" defer />
+    <!-- normliaz cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      defer
+    />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>ElFahham</title>
+  </head>
+  <body>
+    <!-- start main -->
+    <main>
+      <!-- start heading -->
+      <section class="heading-about">
+        <div class="contanier">
+          <!-- start nav -->
+          <nav>
+            <a href="../index.html"
+              ><img src="../images/logo-eng.webp" alt="elfaham-logo"
+            /></a>
+            <div class="burger">
+              <i id="burger-icon" class="fa-solid fa-bars"></i>
+            </div>
+            <ul id="links" class="close">
+              <i id="close" class="fa-regular fa-circle-xmark"></i>
+              <li>
+                <a href="../index.html" data-i18n="home-link"></a>
+              </li>
+              <li>
+                <a href="products.html" data-i18n="products-link"></a>
+              </li>
+              <li><a href="about.html" data-i18n="about-link"></a></li>
+              <li>
+                <a href="contact.html" data-i18n="contact-link"></a>
+              </li>
+              <li class="language">
+                <ul>
+                  <li>
+                    <a href="about.html" onclick="changeLanguage()"
+                      ><i class="fa-solid fa-globe"></i
+                    ></a>
+                  </li>
+                  <li onclick="changeLanguage()" data-i18n="lang-name-two"></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- end nav -->
+          <div class="heading-contet">
+            <h1 data-i18n="about-heading"></h1>
+            <p data-i18n="about-heading-p"></p>
+          </div>
+        </div>
+      </section>
+      <!-- end heading -->
+      <!-- start story -->
+      <section class="story">
+        <div class="contanier">
+          <div class="story-holder">
+            <div class="images-holder">
+              <img
+                src="../images/top-left-story.webp"
+                alt="green-tractor"
+                class="large-left"
+              />
+              <img
+                src="../images/top-right-story.webp"
+                alt="malt-seeds"
+                class="large-right"
+              />
+              <img
+                src="../images/bottom-left-story.webp"
+                alt="metal-tank"
+                class="large-left"
+              />
+              <img
+                src="../images/bottom-right-story.webp"
+                alt="factory"
+                class="large-right"
+              />
+            </div>
+            <div class="content-holder">
+              <h3 data-i18n="story-heading"></h3>
+              <p data-i18n="story-heading-p-one"></p>
+              <p data-i18n="story-heading-p-two"></p>
+              <p data-i18n="story-heading-p-three"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end story -->
+      <!-- start success -->
+      <section class="Success">
+        <div class="contanier">
+          <div class="section-holder">
+            <div class="top-content">
+              <h3 data-i18n="Success-heading"></h3>
+              <p data-i18n="Success-p-one"></p>
+              <p data-i18n="Success-p-two"></p>
+            </div>
+            <img src="../images/Success-image.webp" alt="coffee" />
+            <div class="bottom-contect">
+              <h3 data-i18n="Success-heading-two"></h3>
+              <p data-i18n="Success-p-three"></p>
+              <p data-i18n="Success-p-four"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end success -->
+      <!-- start challenges -->
+      <section class="challenges">
+        <div class="contanier">
+          <div class="content-holder">
+            <img src="../images/challenge.webp" alt="tree-plant" />
+            <div class="text-content">
+              <h4 data-i18n="challenges-heading"></h4>
+              <p data-i18n="challenges-p-one"></p>
+              <h4 data-i18n="mission-heading"></h4>
+              <p data-i18n="mission-p"></p>
+              <h4 data-i18n="goal"></h4>
+              <p data-i18n="goal-p">
+                To become a global leader in the field of importing, exporting,
+                processing and packaging agricultural crops, and to be the first
+                choice for customers looking for quality, trust and excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end challenges -->
+      <!-- start why us -->
+      <div class="contanier">
+        <section class="why-us">
+          <div class="heading">
+            <h2 data-i18n="why-us"></h2>
+            <p data-i18n="why-us-p-head"></p>
+          </div>
+          <div class="features">
+            <div class="features-cart">
+              <div class="icon-holder">
+                <img src="../images/prices.webp" alt="dollar" />
+              </div>
+              <h4 data-i18n="providing"></h4>
+              <p data-i18n="providing-p"></p>
+            </div>
+            <div class="features-cart">
+              <div class="icon-holder">
+                <img src="../images/logistics.webp" alt="logistics" />
+              </div>
+              <h4 data-i18n="logistics"></h4>
+              <p data-i18n="logistics-p"></p>
+            </div>
+            <div class="features-cart">
+              <div class="icon-holder">
+                <img src="../images/quality.webp" alt="quality" />
+              </div>
+              <h4 data-i18n="quality"></h4>
+              <p data-i18n="quality-p"></p>
+            </div>
+            <div class="features-cart">
+              <div class="icon-holder">
+                <img src="../images/factory.webp" alt="factory" />
+              </div>
+              <h4 data-i18n="factory"></h4>
+              <p data-i18n="factory-p"></p>
+            </div>
+            <div class="features-cart">
+              <div class="icon-holder">
+                <img src="../images/time.webp" alt="time" />
+              </div>
+              <h4 data-i18n="time"></h4>
+              <p data-i18n="time-p"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- end why us -->
+      <!-- start team -->
+      <section class="team">
+        <div class="contanier">
+          <div class="heading">
+            <h3 data-i18n="team-heading"></h3>
+            <p data-i18n="team-p"></p>
+          </div>
+          <img src="../images/team.webp" alt="team" />
+        </div>
+      </section>
+      <!-- end team -->
+      <!-- start footer -->
+      <footer>
+        <div class="contanier">
+          <a href="../index.html"
+            ><img src="../images/logo-eng.webp" alt="elfaham-logo"
+          /></a>
+          <div class="pages">
+            <ul>
+              <li>
+                <a href="../index.html" data-i18n="home-link"></a>
+              </li>
+              <li>
+                <a href="products.html" data-i18n="products-link"></a>
+              </li>
+              <li><a href="about.html" data-i18n="about-link"></a></li>
+              <li>
+                <a href="contact.html" data-i18n="contact-link"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="icons-holder">
+            <a href="https://wa.me/+201067441764" target="_blank"
+              ><i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/elfahamcompany?mibextid=LQQJ4d"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/elfahham.eg/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://x.com/elfahhameg?s=11" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/elfahham-for-agricultural-crops/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <hr />
+          <p data-i18n="copy-right"></p>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </main>
+    <!-- end main -->
+    <script src="../js/about.js"></script>
+    <script src="../js/language.js"></script>
+  </body>
+</html>
